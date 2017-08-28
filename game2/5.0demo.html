@@ -11,8 +11,8 @@
 		#div1{width: 800px;height: 600px;overflow: hidden;margin: 20px auto;position: relative;border: 1px dashed #fff;z-index: 10}
 		#gameBtn{color: #000;font-size: 25px;
 			cursor: pointer;width: 100px;height: 30px;line-height: 30px;text-align: center;position: absolute;top: 285px;left: 350px;background: #fff;border-radius: 5px;font-family:'hakuyoxingshu7000';z-index: 9999;}
-		#more{width: 30px;height: 30px;background: transparent;position: absolute;top:310px;left: 100px;cursor: pointer;}
 		
+		#explain{width: 200px;height: 100px;position: absolute;left: 20px;top:200px;color: #fff;font-family:'Nirmala UI Semilight';font-size: 20px;}
 		#window_E1{width: 250px;height: 150px;position: absolute;background: #fff;top: 150px;left: 275px;z-index: 9999;text-align: center;color: #000;display: none; font-family:'hakuyoxingshu7000';cursor: pointer;font-size: 25px;border-radius: 50%;transform-style:preserve-3d;perspective:800px;transition:4s;}
 		/*分数*/
 		#score{color: #fff;font-size: 20px}
@@ -41,9 +41,7 @@
 				Game.init('div1');
 				
 			};
-			oBtn2.onclick=function(){
-				
-			}
+			
 
 		};
 
@@ -620,8 +618,11 @@
 		<div id="window_E1"></div>
 		
 	</div>
-	<div id="more"></div>
-	
+	<div id="explain">
+		1.按键盘数字1旁边的~，可以开启关闭游戏声音
+		<br>
+		2.按键盘R让你火力全开
+	</div>
 	
 </body>
 </html>
