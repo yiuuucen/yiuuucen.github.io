@@ -257,13 +257,12 @@
 	overflow: hidden;
 }
 .centent .section4 .container .row div::after{
-	content: '';	
+	content: 'kank';	
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	left: 0;
 	top: 0;
-	
 
 }
 
