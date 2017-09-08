@@ -17,6 +17,10 @@
 
 
 // section1 S
+$("#sec1>div").click(function(){
+	$('body,html').animate({scrollTop:0},600);
+})
+
 // section1 E
 
 // section2 S
@@ -28,11 +32,13 @@ window.onscroll = function(){ //绑定scroll事件
     //获取到导航条的id  oMyNavbar
     //获取到第一个section的高度，判断滚动距离 oSec1   
     var heg1=$oSec1.height();
-    // 当滚动条到达section2时，导航条固定在上方
+    // 当滚动条到达section2时，导航条固定在上方,并且出现出顶部条
     if( t >= heg1 ) {
-        	$oMyNavbar.addClass('navbar-fixed-top');   
+        $oMyNavbar.addClass('navbar-fixed-top'); 
+        $("#sec1>div").css('display','block');  
     } else { 
-    	$oMyNavbar.removeClass('navbar-fixed-top');    	  
+    	$oMyNavbar.removeClass('navbar-fixed-top'); 
+    	$("#sec1>div").css('display','none');   	  
     } 
 }
 
@@ -64,7 +70,8 @@ var heg2=$oSec2.height();
  		// alert($oSec5.offset().top);
  	    // console.log($('.centent>div').eq($(this).index()+1).offset().top));
  	    $('body,html').animate({scrollTop:$('.centent>div').eq($(this).index()+1).offset().top}
- 	   	,1500); 
+ 	   	,1000); 
+
  	});
 
 
