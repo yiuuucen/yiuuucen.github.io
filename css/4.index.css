@@ -269,7 +269,6 @@
 
 .centent .section4 .container .row div:hover .imgbox{
 	transform:translateZ(20px);
-	
 }
 .centent .section4 .container .row div.imgbox img{
 	width: 100%;
@@ -288,9 +287,8 @@
 .centent .section4 .container .row div.imgbox:hover .mask{
 	display: block;
 }
-.centent .section4 .container .row div.imgbox .mask h4{
-	 
-	 font-weight: bold;
+.centent .section4 .container .row div.imgbox .mask h4{ 
+	font-weight: bold;
 }
 .centent .section4 .container .row div.imgbox .mask p{
 	
