@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='my_ajax.js'></script>
+</head>
+<body>
+	<input type="button" value="读取" id="btn">
+
+	<script>
+		var btn=document.getElementById('btn');
+		btn.onclick=function () {
+			//给文件加个属性，后面接上时间改变，是阻止缓存的一种方法
+			// 带的参数有中文，如果乱码
+			// 用encodeURL("中文")
+			my_ajax('get','test12.txt?t='+new Date().getTime(),'',function(str){
+				alert(str);
+			},function(str){
+				alert(str);
+			})
+
+
+		}
+	</script>
+</body>
+</html>

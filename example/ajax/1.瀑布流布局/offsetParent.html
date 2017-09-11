@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo</title>
+</head>
+<body id="body">
+    <style type="text/css">
+        body {
+            margin:0;
+            padding:0;
+            background:#EEE;
+        }
+        div,ul,li {
+            margin:0;
+        }
+        li {
+            height:20px;
+            line-height:20px;
+        }
+        #test {
+            width:400px;
+            height:250px;
+            padding:20px;
+            background:#F60;
+            border:10px solid #888;
+        }
+        #divtest {
+            margin:30px;
+            position:relative;
+            left:50px;
+            top:70px;
+            padding:20px;
+           
+        }
+    </style>
+    <div id="divtest">
+        <ul>
+            <li>Test</li>
+            <li>Test</li>
+        </ul>
+        <div id="test">
+        </div>
+    </div>
+    <script>
+        var test = document.getElementById("test");
+         test.innerHTML = "<p>Browser:" + navigator.userAgent + "</p>" +
+            "<p>offsetParent:" + test.offsetParent.id + "</p>" +
+            "<p>offsetWidth:" + test.offsetWidth + "</p>" +
+            "<p>offsetHeight:"+test.offsetHeight+"</p>"+
+            "<p>offsetLeft:"+test.offsetLeft+"</p>"+
+            "<p>offsetTop:"+test.offsetTop+"</p>";
+    </script>
+</body>
+</html>
