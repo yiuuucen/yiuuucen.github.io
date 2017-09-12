@@ -1,6 +1,6 @@
 // 
 	
- 	var $oSec1 = $( "#sec1" );
+ 	var $oSec1 = $( "#sec1");
  	var $oSec2 = $( "#sec2");
  	var $oSec3 = $( "#sec3");
  	var $oSec4 = $( "#sec4");
@@ -21,6 +21,21 @@
 $("#sec1>div:first-child").click(function(){
 	$('body,html').animate({scrollTop:0},600);
 })
+
+
+//首页的背景图加个定时器会自动改变
+var $oSec1_li=$('#sec1>ul>li');
+var Sec1Timer=null;
+var a; 
+clearInterval(Sec1Timer);
+Sec1Timer=setInterval(function(){
+    a=Math.random();
+    a=parseInt(a*10%4);
+    for(var i=0;i<4;i++){
+        $oSec1_li[i].className='';
+    }
+    $oSec1_li[parseInt(a)].className='show';
+},2000);
 
 // section1 E
 
