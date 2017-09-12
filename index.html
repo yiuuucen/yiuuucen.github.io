@@ -9,7 +9,7 @@
 	
 	<link rel="stylesheet" href="lib/bootstrap.css">
 	<link rel="shortcut icon" href="hh.ico">
-	<link rel="stylesheet" href="css/4.index.css">
+	<link rel="stylesheet" href="css/5.style.css">
 	<link rel="stylesheet" href="css/reset.css">
 </head>
 <body  data-offset="300">
@@ -45,7 +45,7 @@
 				        	<span class="icon-bar"></span>
 				        	<span class="icon-bar"></span>
 				        </button>
-			            <a class="navbar-brand" href="#">Github</a>
+			            <a class="navbar-brand" href="https://github.com/yiuuucen" target="_blank">Github</a>
 			        </div>
 			        <div id="myCollapse" class="collapse navbar-collapse">
 			        	<ul class="nav  navbar-nav  my_nav navbar-right">
@@ -119,22 +119,25 @@
 					<div class="col-md-3 col-xs-6">
 						<div class="imgbox">
 							<img src="img/02.jpg" alt="">
-							<a href="">
+							<!-- 点击后打开一个新的窗口，固定大小 -->
+							<!-- <a href='example/TBstudy/index.html' target="_blank"> -->
+							<!-- open()中的参数至少要有width和height，否则一个不生效 -->
+							<a onclick="window.open('example/TBstudy/index.html','_blank','width=550px,height=600px')">
 								<div class="mask">
-									<h4>测试类网页</h4>
-									<p>AJAX获取后台数据，用数组读取选项与题目。记录测试者的选项返给后台。</p>
+									<h4>移动端页面</h4>
+									<p>列表页，兼容安卓、ios、平板。</p>
 									<img src="img/search.png" alt="查看">
 								</div>
-							</a>	
+							</a>
 						</div>
 					</div>
 					<div class="col-md-3 col-xs-6">
 						<div class="imgbox">
 							<img src="img/03.jpg" alt="">
-							<a href="">
+							<a href="example/weijinsuo/index.html" target="_blank">
 								<div class="mask">
-									<h4>直播类网页</h4>
-									<p>直播页面响应式，css3 jq运用较多。</p>
+									<h4>官网类网页</h4>
+									<p>多数据响应式网页，能兼容不同大小电脑分辨率。</p>
 									<img src="img/search.png" alt="查看">
 								</div>
 							</a>
@@ -169,10 +172,10 @@
 					<div class="col-md-3 col-xs-6">
 						<div class="imgbox">
 							<img src="img/06.jpg" alt="">
-							<a href="example/weijinsuo/index.html" target="_blank">
+							<a href="">
 								<div class="mask">
-									<h4>官网类网页</h4>
-									<p>多数据响应式网页，能兼容不同大小电脑分辨率。</p>
+									<h4>直播类网页</h4>
+									<p>直播页面响应式，css3 jq运用较多。</p>
 									<img src="img/search.png" alt="查看">
 								</div>
 							</a>
@@ -181,16 +184,13 @@
 					<div class="col-md-3 col-xs-6">
 						<div class="imgbox">
 							<img src="img/07.jpg" alt="">
-							<!-- 点击后打开一个新的窗口，固定大小 -->
-							<!-- <a href='example/TBstudy/index.html' target="_blank"> -->
-							<!-- open()中的参数至少要有width和height，否则一个不生效 -->
-							<a onclick="window.open('example/TBstudy/index.html','_blank','width=550px,height=600px')">
+							<a href="">
 								<div class="mask">
-									<h4>移动端页面</h4>
-									<p>列表页，兼容安卓、ios、平板。</p>
+									<h4>测试类网页</h4>
+									<p>AJAX获取后台数据，用数组读取选项与题目。记录测试者的选项返给后台。</p>
 									<img src="img/search.png" alt="查看">
 								</div>
-							</a>
+							</a>	
 						</div>
 					</div>
 					<div class="col-md-3 col-xs-6">
@@ -225,6 +225,6 @@
 	<script src='lib/jquery-3.2.1.js'></script>
 	<script src='lib/bootstrap.js'></script>
 	<script src='js/myCodeBase.js'></script>
-	<script src='js/4.index.js'></script>
+	<script src='js/5.index.js'></script>
 </body>
 </html>
