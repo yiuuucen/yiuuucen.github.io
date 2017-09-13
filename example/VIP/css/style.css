@@ -604,16 +604,65 @@
 	cursor: pointer;
 	margin: 2px auto;
 }
+/*将右边栏所有li的伪类标签before隐藏*/
+.right .rightNav .navTop ul li:before{
+	opacity: 0;
+	transition:0.6s;
+	transform-origin: center left;
+	transform:translateX(0px) scale(0);
+}
+/*给侧边栏li加了个动画*/
+ .right .rightNav .navTop ul li:hover::before{
+ 	opacity: 1;
+	transform:translateX(-110px) scale(1);
+ }
 .right .rightNav .navTop ul li:nth-child(1){
 	height: 42px;
 	background: url(../img/right.png) no-repeat 0 -128px;
+	position: relative;
 }
+/*取消第一个li账号的before伪元素，用div*/
+.right .rightNav .navTop ul li:nth-child(1):before{
+	display: none;
+}
+.right .rightNav .navTop ul li:nth-child(1)>div{
+	position: absolute;
+    width: 240px;
+    height: 275px;
+    background: #fff;
+    left: -240px;
+    top: 0;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+/*	opacity: 0;
+	transition:0.6s;
+	transform-origin: top left;
+	transform:translateX(0px) scale(0);*/
+}
+.right .rightNav .navTop ul li:nth-child(1):hover div{
+	/*opacity: 1;
+	transform:translateX(-240px) scale(1);*/
+}
+/*出来的div后里面的内容*/
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(1){
+	background: yellow;
+}
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(2){
+	background: red;
+}
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(3){
+	background: pink;
+}
+
+
 .right .rightNav .navTop ul li:nth-child(1):hover{
-	background: url(../img/right.png) no-repeat -40px 2px;
+	background: url(../img/right.png) no-repeat -40px 0px;
 }
+
 .right .rightNav .navTop ul li:nth-child(2){
 	height: 151px;
 	background: rgb(223,20,127);
+	position: relative;
 }
 .right .rightNav .navTop ul li:nth-child(2) p{
 	height: 52px;
@@ -648,6 +697,24 @@
 .right .rightNav .navTop ul li:nth-child(3){
 	height: 36px;
 	background: url(../img/right.png) no-repeat -160px -45px;
+	position: relative;
+}
+.right .rightNav .navTop ul li:nth-child(3):before{
+	content: '我的优惠券';
+	color: #000;
+	text-align: center;
+	line-height: 36px;
+	font-size: 13px;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	height: 36px;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	width: 110px;
+	background: #fff;
+	margin: 2px auto;
 }
 .right .rightNav .navTop ul li:nth-child(3):hover{
 	background: url(../img/right.png) no-repeat -40px -130px;
@@ -655,6 +722,23 @@
 .right .rightNav .navTop ul li:nth-child(4){
 	height: 36px;
 	background: url(../img/right.png) no-repeat -80px 0px;
+	position: relative;
+}
+.right .rightNav .navTop ul li:nth-child(4):before{
+	content: '品牌收藏';
+	color: #000;
+	line-height: 36px;
+	font-size: 13px;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	height: 36px;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	width: 110px;
+	background: #fff;
+	margin: 2px auto;
 }
 .right .rightNav .navTop ul li:nth-child(4):hover{
 	background: url(../img/right.png) no-repeat -40px -45px;
@@ -662,6 +746,23 @@
 .right .rightNav .navTop ul li:nth-child(5){
 	height: 36px;
 	background: url(../img/right.png) no-repeat -120px 0px;
+	position: relative;
+}
+.right .rightNav .navTop ul li:nth-child(5):before{
+	content: '商品收藏';
+	color: #000;
+	line-height: 36px;
+	font-size: 13px;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	height: 36px;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	width: 110px;
+	background: #fff;
+	margin: 2px auto;
 }
 .right .rightNav .navTop ul li:nth-child(5):hover{
 	background: url(../img/right.png) no-repeat -80px -45px;
@@ -669,6 +770,23 @@
 .right .rightNav .navTop ul li:nth-child(6){
 	height: 36px;
 	background: url(../img/right.png) no-repeat -160px 0px;
+	position: relative;
+}
+.right .rightNav .navTop ul li:nth-child(6):before{
+	content: '我的足迹';
+	color: #000;
+	line-height: 36px;
+	font-size: 13px;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	height: 36px;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	width: 110px;
+	background: #fff;
+	margin: 2px auto;
 }
 .right .rightNav .navTop ul li:nth-child(6):hover{
 	background: url(../img/right.png) no-repeat -120px -45px;
@@ -684,16 +802,67 @@
 	height: 36px;
 	/*background-color: yellow;*/
 	margin: 1px auto;
+	cursor:pointer;
+
 }
 .right .rightNav .navBottom div:nth-child(1){
 	background: url(../img/right.png) no-repeat -120px -90px;
+	position: relative;
+}
+/*将右边栏的伪类标签before隐藏*/
+.right .rightNav .navBottom div:before{
+	opacity: 0;
+	transition:0.6s;
+	transform-origin: center left;
+	transform:translateX(0px) scale(0);
+}
+/*给hover加了个动画*/
+.right .rightNav .navBottom div:hover::before{
+	opacity: 1;
+	transform:translateX(-110px) scale(1);
+}
+.right .rightNav .navBottom div:nth-child(1):before{
+	content: '会员反馈';
+	color: #000;
+	line-height: 36px;
+	font-size: 13px;
+	text-align: center;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 36px;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	width: 110px;
+	background: #fff;
+	/*margin: 1px auto;*/
 }
 .right .rightNav .navBottom div:nth-child(1):hover{
 	background: url(../img/right.png) no-repeat -160px -90px;
 }
+
 .right .rightNav .navBottom div:nth-child(2){
 	background: url(../img/right.png) no-repeat -80px -90px;
+	position: relative;
+}
+.right .rightNav .navBottom div:nth-child(2):before{
+	content: '返回顶部';
+	color: #000;
+	text-align: center;
+	line-height: 36px;
+	font-size: 13px;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	height: 36px;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	width: 110px;
+	background: #fff;
+	margin: 1px auto;
 }
 .right .rightNav .navBottom div:nth-child(2):hover{
-	background: url(../img/right.png) no-repeat -120px -135px;
+	background: url(../img/right.png) no-repeat -120px -130px;
 }
