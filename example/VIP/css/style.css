@@ -627,31 +627,127 @@
 }
 .right .rightNav .navTop ul li:nth-child(1)>div{
 	position: absolute;
-    width: 240px;
-    height: 275px;
+    width: 274px;
     background: #fff;
-    left: -240px;
+    left: -274px;
     top: 0;
     box-sizing: border-box;
     border: 1px solid #eee;
-/*	opacity: 0;
-	transition:0.6s;
-	transform-origin: top left;
-	transform:translateX(0px) scale(0);*/
+    cursor: default;
+    
+	display: none;
+	
 }
 .right .rightNav .navTop ul li:nth-child(1):hover div{
-	/*opacity: 1;
-	transform:translateX(-240px) scale(1);*/
+	display: block;
+	
 }
-/*出来的div后里面的内容*/
+/*出来的div设置个before用来关闭X*/
+.right .rightNav .navTop ul li:nth-child(1)>div::before{
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 14px;
+	right: 14px;  
+    cursor: pointer;
+    background: url(../img/right.png) no-repeat -193px -170px;
+}
+/*出来的div后里面的内容,第一块内容*/
 .right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(1){
-	background: yellow;
 }
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(1) img{
+	padding: 30px;
+	cursor: pointer;
+}
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(1) p{
+	margin: 0;
+	padding-bottom: 20px;
+	font-size: 13px;
+	color: #000;
+}
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(1) p a{
+	font-size: 13px;
+	padding: 0 2px;
+	color: red;
+}
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(1) p a:first-child{
+	border-right: 1px solid #000;
+}
+/*出来的div后里面的内容,第二块内容*/
 .right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(2){
-	background: red;
+	/*position: relative;*/
+	height: 104px;
+	padding: 14px 0;
+	box-sizing: border-box;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f8f8f8;
 }
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(2) p:nth-child(1){
+	float: left;
+	width: 49%;
+	height: 66px;
+	padding-top: 10px;
+	border-right: 1px solid #eee;
+	margin: 0;
+}
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(2) p:nth-child(1) a{
+	margin: 0 auto;
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background:url(../img/right.png) no-repeat -200px -90px;
+}
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(2) p:nth-child(1) span{
+	color: #000;
+	font-size: 13px;
+}
+/*当hover状态时改变*/
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(2) p:nth-child(1):hover a{
+	background:url(../img/right.png) no-repeat -200px 0px;
+}
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(2) p:nth-child(1):hover span{
+	color: rgb(247,142,197);
+	cursor: pointer;
+}
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(2) p:nth-child(2){
+	float: left;
+	width: 49%;
+	height: 66px;
+	padding-top: 10px;
+	
+	margin: 0;
+}
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(2) p:nth-child(2) a{
+	margin: 0 auto;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background:url(../img/right.png) no-repeat -200px -56px;
+
+}
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(2) p:nth-child(2) span{
+	color: #000;
+	font-size: 13px;
+}
+/*当hover状态时改变*/
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(2) p:nth-child(2):hover a{
+	background:url(../img/right.png) no-repeat -200px -27px;
+}
+.right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(2) p:nth-child(2):hover span{
+	color: rgb(247,142,197);
+	cursor: pointer;
+}
+/*出来的div后里面的内容,第三块内容*/
 .right .rightNav .navTop ul li:nth-child(1)>div div:nth-child(3){
-	background: pink;
+	padding: 10px;
+	float: right;
+	color: rgb(32,160,205);
+	font-size: 13px;
+	background: #fff;
+	cursor: pointer;
 }
 
 
