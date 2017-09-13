@@ -13,7 +13,6 @@
 	height: 100vh;
 	position: relative;
 	font-family:'hakuyoxingshu7000';
-
 }
 .centent .section1 .ttop{
 	width: 50px;
@@ -107,9 +106,11 @@
 	background: url(../img/bg4.jpg) no-repeat center;
 }
 .centent .section1 ul li.show{
+	width: 100%;
+	height: 100%;
 	opacity: 0.9;
 	display: block;
-	transition:2s;
+	transition:2.5s;
 
 }
 /*section1 E*/

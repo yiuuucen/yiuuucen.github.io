@@ -35,7 +35,7 @@ Sec1Timer=setInterval(function(){
         $oSec1_li[i].className='';
     }
     $oSec1_li[parseInt(a)].className='show';
-},2000);
+},2500);
 
 // section1 E
 
