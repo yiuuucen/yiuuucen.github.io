@@ -625,7 +625,22 @@
 		<br>
 		3.按键盘R让你火力全开
 	</div>
-	
+	<!-- 图片预加载功能 -->
+	<script>
+		 var images = new Array()
+            function preload() {
+                for (i = 0; i < preload.arguments.length; i++) {
+                    images[i] = new Image()
+                    images[i].src = preload.arguments[i]
+                }
+            }
+            preload(
+                "img/1.png",
+                "img/2.png",
+                "img/3.png",
+                "img/4.png"
+            )
+	</script>
 </body>
 </html>
 <!-- 通往下一关的BUG已解决
