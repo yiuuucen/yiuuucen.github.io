@@ -12,7 +12,20 @@
     var $oMyWorks=$('#myWorks');
     
 // 
-
+// 预加载进去所有图片
+    var images = new Array()
+    function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
+            }
+    }
+    preload(
+    "img/01.jpg","img/02.jpg","img/03.jpg","img/04.jpg","img/05.jpg",
+    "img/06.jpg","img/07.jpg","img/08.jpg","img/bg1.jpg","img/bg2.jpg",
+    "img/bg3.jpg","img/bg4.jpg","img/css.png","img/h5.png","img/js.png",
+    "img/myhead.jpg","img/search.png","img/ttop.png","img/web.png",
+     )
 
 
 
