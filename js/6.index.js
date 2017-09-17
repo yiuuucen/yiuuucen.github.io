@@ -36,7 +36,7 @@ $("#sec1>div:first-child").click(function(){
 })
 
 
-//首页的背景图加个定时器会自动改变
+//首页的背景图加个定时器会自动改变,2.5s
 var $oSec1_li=$('#sec1>ul>li');
 var Sec1Timer=null;
 var a; 

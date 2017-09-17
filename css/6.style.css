@@ -326,10 +326,32 @@
 	min-height: 700px;
 	height: 100vh;
 	position: relative;
-	background: green;
+	
 	padding-top: 70px;
 }
-
+/*运用弹性布局*/
+.centent .section5 ul{
+	width: 100%;
+	height: 200px;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	align-items:baseline;
+}
+.centent .section5 ul li{
+	width: 210px;
+	height: 200px;
+	margin: 10px;
+}
+.centent .section5 ul li img{
+	width: 100%;
+}
+.centent .section5 ul li div{
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+	padding-top: 10px;
+}
 /*section5 E*/
 
 /*section6 S*/
