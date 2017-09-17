@@ -1,6 +1,7 @@
 /**/
 /*common*/
 .container{
+	height: 100%;
 	width: 1000px;
 	margin: 0 auto;
 }
@@ -13,7 +14,7 @@
 /*header START*/
 .header{
 	height: 128px;
-	
+
 	/*background: pink;*/
 }
 .header .header_top{
@@ -32,7 +33,6 @@
 }
 .header .header_top ul{
 	right: 0;
-	position: absolute;
 	height: 100%;
 }
 .header .header_top ul li{
@@ -172,6 +172,14 @@
 .hrhr .tabs ol{
 	float: right;
 	height: 100%;
+}
+/*这个页面的第一个按钮默认样式*/
+.hrhr .tabs li.indexact{
+	background: rgb(189,16,103);
+}
+/*当鼠标移入时加入这个class*/
+.hrhr .tabs li.active{
+	background: rgb(219,10,118);
 }
 /*.hrhr .tabs ol li{
 	height: 100%;
@@ -376,7 +384,6 @@
 .center .goods ul li .foodspic{
 	position: relative;
 	margin:0 20px 20px 0;
-
 }
 .center .goods ul li:nth-child(4n) .foodspic{
 	margin:0 0px 20px 0;
@@ -433,6 +440,7 @@
 	height: 500px;
 	background: rgb(252,252,252);
 	margin-top: 10px;
+
 }
 .ulwidth{
 	width: 90%;
@@ -441,7 +449,7 @@
 	background: yellow;*/
 }
 .footer .footer_ul1{
-	height: 100px;
+	/*height: 100px;*/
 	/*background: pink;*/
 	margin-top: 25px;
 }
@@ -499,6 +507,7 @@
 .footer .footer_ul2{
 	/*height: 300px;*/
 	/*background: pink;*/
+	margin: 37px 0 25px;
 }
 .footer .footer_ul2 ul{
 	
@@ -554,7 +563,7 @@
 	
 }
 .footer .footer_ul2 ul li:nth-child(1){
-
+	
 }
 
 /**********************************************************************/
@@ -571,6 +580,9 @@
 }
 /**********************************************************************/
 /*footer END*/
+
+
+
 /*右边栏*/
 .right{
 	position: fixed;
