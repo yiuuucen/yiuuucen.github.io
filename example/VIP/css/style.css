@@ -377,6 +377,7 @@
 	float: left;
 	max-height: 370px;
 	overflow: hidden;
+
 }
 .center .goods ul li:nth-child(4n){
 	width: 235px;
@@ -384,6 +385,7 @@
 .center .goods ul li .foodspic{
 	position: relative;
 	margin:0 20px 20px 0;
+	cursor: pointer;
 }
 .center .goods ul li:nth-child(4n) .foodspic{
 	margin:0 0px 20px 0;
