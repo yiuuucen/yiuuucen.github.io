@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='lib/vue.js'></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#app ul{
+			width: 300px;
+			margin: 100px auto;
+		}
+		#app ul li {
+			list-style: none;
+			width: 100px;
+			height: 100px;
+			box-sizing: border-box;
+			background: #ccc;
+			float: left;
+			padding-top: 30px;
+			text-align: center;
+			border: 3px solid #fff;
+		}
+		#app ul li.active {
+			border: 3px solid red;
+		}
+		#app input{
+			width: 50px;
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+	    <ul>
+	        <li v-for="(item, index) of items" :class="{active: index == activeIndex}">{{ item.name }} </li>
+	    </ul>
+	    <input type="button" value="抽奖" @click='gogo()'>
+	</div>
+	<script>
+	var app = new Vue({
+	    el: '#app',
+	    data () {
+	        return {
+	            activeIndex: 0,
+	            i: 0,
+            	count: 0,
+            	num:0,
+            	// 用来存放已经选择过的
+            	json:{},
+            	//用来存放可以随机选择的数
+            	arr:[1,2,3,4,5,6,7,8,9],
+	            items: [
+	                {name: '1元'},
+	                {name: '2元'},
+	                {name: '3元'},
+	                {name: '4元'},
+	                {name: '5元'},  
+	                {name: '6元'},
+	                {name: '7元'},
+	                {name: '8元'},
+	                {name: '9元'}
+	            ],
+	            // 几等奖所对应的频率
+	            prize:{     	
+	            	1:52,
+	            	2:51,
+	            	3:50, 
+	            	4:49,
+	            	5:48, 
+	            	6:47, 
+	            	7:46,
+	            	8:45,         	
+	            	9:44,
+	            },
+	        }
+	    },
+	    methods: {
+			go(num) {
+			  this.num=num;
+			  // 固定运动4s，后停止
+			  const SECONDS = 4000;
+			  const HALF_SECONDS = 2000;
+			  const FREQUENCY = this.prize[this.num];
+			  		
+			
+			  this.timer1=null;
+			  this.timer1=setTimeout(() => {
+			      
+			      this.activeIndex++;
+			      if(this.activeIndex >= this.items.length ) {this.activeIndex = 0;}
+			       // 这里给了频率是为了，在前2S运动时间固定，后面时间变慢。
+			      if (this.count >= HALF_SECONDS) {
+			         this.i+= 10;
+			         this.count += FREQUENCY + this.i;
+			      } else {
+			        this.count += FREQUENCY;
+			      }
+
+			      if (this.count <= SECONDS) {
+			         this.go(num);
+			      }
+			     
+			  }, FREQUENCY + this.i);
+
+			  
+            	
+			},
+			gogo(){	
+				// 如果按了多次按钮，应该取最后一次，所有应该清除之前的定时器
+				clearInterval(this.timer1);	
+				clearInterval(this.timer2);
+				// 这里应该将参数重置，为了让下次go()运动起来
+				this.count=0;
+				this.activeIndex=0;
+				this.i=0;	
+				//让a的取值为1-9
+				var a=this.arr[Math.floor(Math.random()*this.arr.length)];
+				// 如果抽到一个后，将它保存在json对象中，下次取值无法取到它
+				if(!this.json[a]){
+					this.json[a]=1;
+					if(this.arr.length){
+						this.arr.splice(this.arr.indexOf(a),1);
+					}else{
+						alert('不能在抽了');
+						return false ;
+					}
+					
+					this.go(a);
+				}
+				
+				
+				
+				
+				// this.go(a);
+				
+				// console.log(a);
+				// console.log(this.json);
+			    this.timer2=setTimeout(function(){
+					alert('你抽到了'+a+'元');
+			    },4500);	  
+			},
+
+	    },
+	   
+	});
+	</script>
+</body>
+</html>
