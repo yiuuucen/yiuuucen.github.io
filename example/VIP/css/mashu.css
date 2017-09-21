@@ -1,0 +1,616 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:#000;
+}
+section.content{
+	font-size: 14px;
+}
+section.content .c-head{
+	width:97%;
+	height: 40px;
+	font-size: 12px;
+	line-height:40px;
+	
+}
+section.content #product_head{
+	height:745px;
+	// position:relative;
+}
+section.content .top-left{
+	float:left;width: 45%;
+	// height: 531px;
+}
+section.content .top-left #bigImg{
+	width: 100%;
+	height: 531px;
+	overflow: hidden;
+	position: relative;
+}
+section.content .top-left #bigImg img{
+	width: 100%;
+	height: 531px;
+	transition: transform 1s;
+	transform-origin:10px 0;
+
+}
+ section.content .top-left #bigImg:hover img{
+	transform:scale(2);
+	cursor: crosshair
+} 
+.search{
+	font-size:14px;
+	color:#fff;
+	padding:1px 4px;
+	background: rgba(0, 0, 0, 0.2);
+	position:absolute;
+	top:96%;
+	left: 95%;
+}
+section.content .top-right{
+	width: 53%;
+	margin-left: 2%;
+	height: 600px;
+	font-size:12px;
+	float: left;
+}
+section.content .top-right p:first-child{
+	height:30px;
+	line-height:30px;
+}
+section.content .top-right p:first-child #leave-time{
+	display:inline-block;
+	width:164px;
+	height: 18px;
+	line-height: 18px;
+	color:#fff;
+	text-align: center;
+	float: right;
+	border-radius:9px/9px 0 0 50%;
+	background: #000;
+}
+section.content .top-right div{
+	margin-bottom: 30px;
+}
+section.content div:first-child>div p:nth-child(2){
+	font-size:16px;
+}
+section.content .top-right div:nth-child(5) span:last-child{
+	border:2px solid #f10180;
+	padding:5px 10px;
+	color:#f10180;
+}
+section.content .top-right .num{
+	border:1px solid #ccc;
+	display:inline-block;
+	width: 76px;
+	height: 28px;
+}
+section.content .top-right div .num span{
+	width: 24px;
+	height: 28px;
+	display:inline-block;
+	line-height: 28px;
+	text-align:center;
+	cursor: pointer;
+}
+section.content .top-right div span span:first-child{
+	float:left;
+	background: url(../img/mybgs.png) no-repeat 0 -150px;
+}
+section.content .top-right div span em{
+	display:inline-block;
+	width: 28px;
+	height: 28px;
+	float:left;
+	line-height:28px;
+	text-align:center;
+	font-style: normal;
+}
+section.content .top-right #buyNum{
+	position: relative;
+}
+section .top-right #buyNum #toolTips{	
+	width: 130px;
+    height:25px;
+    text-align: center;
+    position: absolute;
+    bottom:-56px;
+    left:2%;   
+    border: 1px solid #dbdada;
+    border-radius: 2px;
+    border-color: #f8dbb1;
+    box-shadow: 0 0 3px rgba(0,0,0,.1);
+    font: 12px/25px '微软雅黑';
+    color: #4d4d4d;
+    z-index: 50;  
+    display:none;    
+}
+section .top-right #buyNum #toolTips i{
+	color:#c8c45f;
+	padding-right: 5px;
+}
+section.content .top-right div span span:last-child{
+	float:left;
+	background: url(../img/mybgs.png) no-repeat -50px -150px;
+}
+section.content .top-right #join{
+	padding-left:42px;
+}
+section.content .top-right #join button{
+	width: 198px;
+	height: 46px;
+	border-radius:4px;
+	border:0px;
+	color:#fff;
+	font-size:18px;
+	background: #f10180;
+}
+section.content .top-right #join p{
+	font-size:13px;
+	color:#999;
+	padding:10px 0;
+	height: 30px;
+
+}
+section.content .top-right #join p span{
+	color:#f10180;
+}
+section.content .top-right #join p i{
+	font-size:17px;
+	margin-left: 4px;
+}
+section.content .top-right #join button i{
+	margin-right: 8px;
+}
+section.content .top-right ul{
+	width: 100%;
+	height: 60px;
+	margin-top:150px;
+	border-top:1px dashed #ccc;
+}
+section.content .top-right ul li{
+	float: left;
+	width:33%;
+	text-align: center;
+	margin: 20px 0;
+	font-size:14px;
+	color:#999;
+	border-right: 1px solid #ccc;
+}
+section.content .top-right ul li:last-child{
+	border: 0;
+}
+section.content .top-right ul li i{
+	font-size:20px;
+	color:#fff;
+	background: #bbb;
+	padding:10px 10px 6px;
+	border-radius:50%;
+	margin-right:5px;
+}
+section.content .top-right ul li:nth-child(2) i{
+	padding:2px 15px 7px 8px;
+}
+section.content .top-right ul li:nth-child(3) i{
+	padding: 8px 10px 8px 7px;
+}
+section.content .price{
+	width: 550px;
+	height: 60px;
+	padding:10px;
+	background: #faf5f8;
+	color:#f43499;
+}
+section.content .price em{
+	font-size:30px;
+}
+section.content .yunfei{
+	width: 420px;
+	height: 34px;
+	color：#666666;
+	margin-top:10px;
+}
+section.content  .sp{
+	margin-right: 10px;
+	font-size:12px;
+	color:#c5c5c5;
+}
+section.content .cm{
+	width: 50px;
+	height: 20px;
+}
+section.content #pic-slider{
+	width: 100%;
+	height: 79px;
+	margin-top: 5px;
+	list-style: none;
+}
+section.content #pic-slider>img{
+	width:62px;
+	height: 78px;
+	float:left;
+	display: block;
+	margin-left: 10px;
+	overflow: hidden;
+}
+
+section.content .other-infoCoding{
+	width: 500px;
+	height: 32px;
+	padding:5px 0;
+	font-size:12px;
+	color:#999;
+}
+section.content .other-infoCoding .star{
+	margin-left:30px;
+}
+section.content .other-infoCoding .star i{
+	
+	color:red;
+	font-size:18px;
+}
+section.content .other-infoCoding .share{
+	padding:3px 7px;
+	font-size: 12px;
+    background: #fafafa;
+    color:#000;
+    border: solid 1px #c2c2c2;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 77px;
+    // position: relative;
+    // z-index: 100;
+    // transition: border .3s;
+}
+section.content .other-infoCoding .share i{
+	color:#ccc;
+	padding-right: 5px;
+	font-size: 15px;
+}
+
+
+//第二部分#product_message
+section.content #product_message{
+	width: 100%;
+}
+section.content #product_message .product_message_head{
+	width: 100%;
+	height: 40px;
+	position: static;
+	border:1px solid #ddd;
+	border-bottom:3px solid #000;
+	z-index: 999;
+}
+section.content #product_message .product_message_head ul{
+	width: 100%;
+	height: 40px;
+	
+}
+section.content #product_message .product_message_head ul .price1{
+	float: left;
+}
+section.content #product_message .product_message_head ul .price1 em{
+	font-size:30px;
+	color:#f43499;
+	margin-left: 350px;
+}
+
+section.content #product_message .product_message_head ul  button{
+	width: 198px;
+	height: 42px;
+	margin-left: 40px;
+	// border-radius:4px;
+	border:0px;
+	color:#fff;
+	font-size:18px;
+	background: #f10180;
+}
+section.content #product_message .product_message_head ul  button i{
+	margin-right: 8px;
+}
+section.content #product_message .product_message_head ul li{
+	width: 100px;
+	height: 40px;
+	float: left;
+	line-height:40px;
+	text-align:center;
+	font-size:14px;
+
+}
+section.content #product_message .product_message_head ul li:nth-child(2){
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+}
+section.content #product_message .header_title{
+	width: 100%;
+	margin-top: 20px;
+	height: 30px;
+	background: url("../img/line.png") repeat-x bottom;
+}
+section.content #product_message .header_title p{
+	width: 100%;
+	height: 30px;
+	font-size: 20px;
+	color:#f10180;
+}
+section.content #product_message .header_title p span{
+	margin-left: 5px;
+	color:#888;
+}
+section.content #product_message table{
+	width: 100%;
+	height: 120px;
+	font-size:14px;
+	margin:20px 0;
+	border-collapse :collapse;
+	color:#999;
+	    
+}
+section.content #product_message table td{
+	border: 1px solid #ededed;
+    padding: 10px;
+}
+section.content #product_message table .good_news_title{
+	width: 10%;
+	color:#666;
+	display: table-cell;
+	background: #f5f5f5;
+}
+section.content #product_message .imgs_1{
+	
+	margin-top:35px;
+	text-align:center;
+	
+}
+section.content #product_message .imgs_1 .bbg_big{
+	vertical-align: middle;
+}
+section.content #product_message .imgs_2{
+	margin: 20px 0 0 20px;  
+}
+section.content #product_message .imgs_2 .bbg_small{
+	width:47%;
+	height: 600px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+section.content #product_message .instruction{
+	text-indent: 2em;
+	padding:20px 0;
+}
+section.content #product_message .look_others_head{
+	width: 98%;
+	height: 45px;
+	line-height: 45px;
+	margin-top:50px;
+	padding:0 10px;
+	background: #ddd;
+}
+section.content #product_message .look_others_head h2{
+	width: 70%;
+	float:left;
+	font-weight: 400;
+	font-size: 14px;
+}
+section.content #product_message .look_others_head h2 span{
+	color:#999;
+}
+section.content #product_message .look_others_head div{
+	width: 20%;
+	float:right;
+}
+section.content #product_message .look_others{
+	width: 100%;
+	height: 600px;
+	position:relative;
+}
+section.content #product_message .look_others ul{
+	width: 100%;
+	height: 300px;
+	padding:0 30px;
+}
+section.content #product_message .look_others ul li{
+	width: 17%;
+	height: 300px;
+	margin:10px;
+	float:left;
+}
+section.content #product_message .look_others ul li img{
+	height: 230px;
+}
+section.content #product_message .look_others ul li .item-name{
+	width: 100%;
+	height: 18px;
+	color:#666;
+	font-size:12px;
+
+}
+section.content #product_message .look_others ul li .price-vipshop{
+	color:#f10180;
+}
+section.content #product_message .look_others ul li .price-market{
+	color:#999;
+	padding-left:5px;
+	text-decoration: line-through;
+}
+section.content #product_message .button-left-right{
+	position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    background: #000;
+    background: rgba(0,0,0,.3);
+    width: 37px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    // -webkit-transition: all .3s ease-in;
+    // transition: all .3s ease-in;
+}
+section.content #product_message .look_others #button-left{
+	left:0;
+}
+section.content #product_message .look_others #button-right{
+	right:0;
+}
+section.content #product_message #consult{
+	width: 100%;
+	height: 810px;
+	margin:30px 0;
+}
+section.content #product_message #consult div:first-child{
+	width: 100%;
+	height: 30px;
+	font-weight: 700;
+	line-height: 30px;
+}
+section.content #product_message #consult div:first-child span{
+	display:inline-block;
+	width: 65px;
+	height: 28px;
+	border-radius:4px;
+	background: url("../img/serve.png") no-repeat;
+	background-size: contain;
+	padding-left:36px;
+	border:1px solid #f10180;
+	color:#fb4892;
+}
+section.content #product_message #consult i{
+	display:inline-block;
+	width: 14px;
+	height: 15px;
+	margin-right:5px;
+	position: absolute;
+	top:2px;
+	left: 0;
+}
+section.content #product_message #consult .qti-txt{
+	color:#333;
+	padding-left: 22px;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	font-weight: 700;
+	position:relative;
+}
+section.content #product_message #consult .qti-txt i{
+	background: url(../img/mybgs.png) no-repeat;
+	background-position: -500px -299px;
+	
+	// border:1px solid green;
+}
+section.content #product_message #consult .qti-content{
+	position: relative;
+	padding-left:22px;
+}
+section.content #product_message #consult .qti-content i{
+	background: url(../img/mybgs.png) no-repeat;
+	background-position: -500px -349px;
+}
+section.content #product_message #consult .qti-content .look-detail{
+	color:#fb4892;
+}
+section.content #product_message .about-us{
+	width: 100%;
+	height: 820px;
+}
+section.content #product_message .about-us ul{
+	width: 98%;
+	height: 112px;
+	padding:0 30px;
+	border:0;
+	overflow:hidden;
+}
+section.content #product_message .about-us ul li{
+	width: 6.3%;
+	height: 80%;
+	margin:22px 1.7% 0 1.7%;
+	float:left;
+	display:inline-block;
+	// border:1px solid red;
+	// border:0;
+}
+section.content #product_message .about-us ul li:first-child{
+	background: url(../img/footbgs.png) no-repeat -0px -120px;
+}
+section.content #product_message .about-us ul li:nth-child(2){
+	background: url(../img/footbgs.png) no-repeat -60px 0px;
+}
+section.content #product_message .about-us ul li:nth-child(3){
+	background: url(../img/footbgs.png) no-repeat -120px 0px;
+}
+section.content #product_message .about-us ul li:nth-child(4){
+	background: url(../img/footbgs.png) no-repeat -180px 0px;
+}
+section.content #product_message .about-us ul li:nth-child(5){
+	background: url(../img/footbgs.png) no-repeat -240px 0px;
+}
+section.content #product_message .about-us ul li:nth-child(6){
+	background: url(../img/footbgs.png) no-repeat -300px 0px;
+}
+section.content #product_message .about-us ul li:nth-child(7){
+	background: url(../img/footbgs.png) no-repeat -360px 0px;
+}
+section.content #product_message .about-us ul li:nth-child(8){
+	background: url(../img/footbgs.png) no-repeat -420px 0px;
+}
+section.content #product_message .about-us ul li:nth-child(9){
+	background: url(../img/footbgs.png) no-repeat -480px 0px;
+}
+section.content #product_message .about-us ul li:last-child{
+	background: url(../img/footbgs.png) no-repeat -540px 0px;
+}
+section.content #product_message .about-us div:nth-child(2){
+	width: 100%;
+	height: 70px;
+	border:0;
+	background: url(../img/footbgs.png) no-repeat 0px -240px;
+}
+section.content #product_message .about-us .last-img{
+	width: 100%;
+	height: 614px;
+	position: relative;
+}
+section.content #product_message .about-us .last-img img{
+	width:100%;
+	// height:100%;
+}
+section.content #product_message  #about-us-left{
+	left:0;
+	top:200px;
+}
+section.content #product_message  #about-us-right{
+	right:0;
+	top:200px;
+}
+.footer>.aboutus{
+	background:deeppink ;
+}
+.footer>.aboutus>ul {
+	width:800px;
+	height: 0.3rem;
+	background: deeppink;
+	margin: 0 auto;
+}
+
+.footer>.aboutus>ul>li {
+	display: inline;
+}
+
+.footer>.aboutus>ul>li>span {
+	color: white;
+}
+
+.footer>.aboutus>ul>li>a {
+	font-size: 0.14rem;
+	text-decoration: none;
+	color: white;
+}

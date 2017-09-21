@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main markdown">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont icon-gouwudai"></i>
+                    <div class="name">购物袋</div>
+                    <div class="fontclass">.icon-gouwudai</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-jingpin"></i>
+                    <div class="name">精品</div>
+                    <div class="fontclass">.icon-jingpin</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-shouji"></i>
+                    <div class="name">手机</div>
+                    <div class="fontclass">.icon-shouji</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-xiebao"></i>
+                    <div class="name">鞋包</div>
+                    <div class="fontclass">.icon-xiebao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-guoji"></i>
+                    <div class="name">国际</div>
+                    <div class="fontclass">.icon-guoji</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-meizhuang"></i>
+                    <div class="name">美妆</div>
+                    <div class="fontclass">.icon-meizhuang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-nanshi"></i>
+                    <div class="name">男士</div>
+                    <div class="fontclass">.icon-nanshi</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-yugao"></i>
+                    <div class="name">预告</div>
+                    <div class="fontclass">.icon-yugao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-yundong"></i>
+                    <div class="name">运动</div>
+                    <div class="fontclass">.icon-yundong</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-nvzhuang"></i>
+                    <div class="name">女装 连衣裙</div>
+                    <div class="fontclass">.icon-nvzhuang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-icon-test"></i>
+                    <div class="name">手表</div>
+                    <div class="fontclass">.icon-icon-test</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-arr-up"></i>
+                    <div class="name">三角形</div>
+                    <div class="fontclass">.icon-arr-up</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-arr-down-copy"></i>
+                    <div class="name">三角形</div>
+                    <div class="fontclass">.icon-arr-down-copy</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-jujia"></i>
+                    <div class="name">居家</div>
+                    <div class="fontclass">.icon-jujia</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-gift__easyico"></i>
+                    <div class="name">礼物</div>
+                    <div class="fontclass">.icon-gift__easyico</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-7"></i>
+                    <div class="name">母婴</div>
+                    <div class="fontclass">.icon-7</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-yingtao"></i>
+                    <div class="name">樱桃</div>
+                    <div class="fontclass">.icon-yingtao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-kongxin"></i>
+                    <div class="name">空心</div>
+                    <div class="fontclass">.icon-kongxin</div>
+                </li>
+            
+        </ul>
+
+        <h2 id="font-class-">font-class引用</h2>
+        <hr>
+
+        <p>font-class是unicode使用方式的一种变种，主要是解决unicode书写不直观，语意不明确的问题。</p>
+        <p>与unicode使用方式相比，具有如下特点：</p>
+        <ul>
+        <li>兼容性良好，支持ie8+，及所有现代浏览器。</li>
+        <li>相比于unicode语意明确，书写更直观。可以很容易分辨这个icon是什么。</li>
+        <li>因为使用class来定义图标，所以当要替换图标时，只需要修改class里面的unicode引用。</li>
+        <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的fontclass代码：</h3>
+
+
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+        <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">icon-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
+        <blockquote>
+        <p>"iconfont"是你项目下的font-family。可以通过编辑项目查看，默认是"iconfont"。</p>
+        </blockquote>
+    </div>
+</body>
+</html>

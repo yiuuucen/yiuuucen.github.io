@@ -1,0 +1,236 @@
+/* 左悬浮栏基本样式开始*/
+#index-nav-wrap>div>a.aside-active{
+    background:#f10180;
+    color:#fff;
+    border-radius:3px;
+    width: 58px;
+    margin-top:4px;
+    margin-left:4px;
+}
+#index-nav-wrap>div>a.aside-active>i{color:#fff;}
+#index-nav-wrap>div>a.aside-active:hover{
+    color:#fff;
+}#index-nav-wrap>div>a.aside-active:hover i{
+    color:#fff;
+}
+#index-nav-wrap{
+    position: absolute;
+    width: 76px;
+    left: 50%;
+    margin-left: -612px;
+    top: 1087px;
+    background: #fff;
+    z-index: 100;
+    height:446px;
+}
+#index-nav-wrap>div{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    text-align:center;
+}
+#index-nav-wrap>div>a{
+    display: block;
+    margin-left:7px;
+    padding: 8px 5px;
+    height: 20px;
+    width: 52px;
+    border-bottom: 1px solid #eaeaea;
+    color: #666;
+    text-decoration:none;
+}
+#index-nav-wrap>div>a:hover{
+    color:#f10180;
+}
+#index-nav-wrap>div>a:hover>i{
+    color:#f10180;
+}
+#index-nav-wrap>div>a>i{
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+    color: #949494;
+    position: relative;
+    top: 1px;
+    font-size: 20px;
+    line-height: 20px;
+}
+#index-nav-wrap>div>a>span{
+    line-height: 20px;
+    white-space: nowrap;
+    font-size:12px;
+}
+/* 左悬浮栏基本样式结束*/
+/*女装板块开始*/
+#J-index-floor1{
+    background:#fff;
+    width:1020px;
+    height:auto;
+    transform: translateX(9px);
+}
+#J-index-floor1>.shop-sort-title{
+    margin-bottom: 20px;
+    min-height: 43px;
+    border-bottom: 1px #1a1a1a solid;
+    position: relative;
+    color:#333;
+}
+#J-index-floor1>.shop-sort-title>img{
+    vertical-align: top;
+}
+#J-index-floor1>.shop-sort-title>a{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}#J-index-floor1>.shop-sort-title>a:hover{color:#f20080;}
+
+#J-floorBrandList-1{
+    width:1020px;
+    height: 2000px;
+    position: relative;
+}#J-floorBrandList-1>.brand-item{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    float: left;
+    z-index: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 490px;
+    height: 275px;
+    background: #fff;
+}
+#J-floorBrandList-1>.brand-item>a>img{
+    width: 490px;
+    height: 235px;
+    vertical-align: top;
+}
+#J-floorBrandList-1>.brand-item>.pms-info{
+    position: absolute;
+    z-index: 998;
+    top: 205px;
+    left: 0;
+    background: #000;
+    background: rgba(0,0,0,.6);
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    width: 365px;
+    padding: 0 100px 0 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+}
+#J-floorBrandList-1>.brand-item>.brand-info{
+   position: relative;
+    padding: 0 120px 0 10px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+}#J-floorBrandList-1>.brand-item>.pms-info::after{
+    background-image: url(../img/aside-left-img/suit-dress/sprint.png);
+    position: absolute;
+    left: 10px;
+    top: 11px;
+    width: 8px;
+    height: 9px;
+    content: ' ';   
+}
+#J-floorBrandList-1>.brand-item>.brand-info>.brand-discount{
+    color: #4d4d4d;
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100px;
+    display: inline-block;
+}#J-floorBrandList-1>.brand-item>.brand-info>.brand-discount>span{
+    font-size: 24px;
+    color: #f10582;
+    margin-right: 3px;
+    font-weight: 700;
+}
+#J-floorBrandList-1>.brand-item>.brand-info>.brand-name{
+    cursor: pointer;
+    font-size: 14px;
+    color: #4d4d4d;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 230px;
+    display: inline-block;
+}
+#J-floorBrandList-1>.brand-item>.brand-info>.brand-time{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 16px;
+    line-height: 16px;
+    color: #4d4d4d;
+    white-space: nowrap;
+}#J-floorBrandList-1>.brand-item>.brand-info>.brand-time>i{
+    float: right;
+    display: block;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/aside-left-img/suit-dress/sprint.png) no-repeat -50px 0;
+}
+#J-floorBrandList-1>.brand-item>.brand-info>.brand-time>span{
+    float: right;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 16px;
+    color: #4d4d4d;
+    white-space: nowrap;
+}
+#J-floorBrandList-1>.brand-item>.J_myFav_tag{
+    display: none;
+    position: absolute;
+    height: 20px;
+    line-height: 20px;
+    z-index: 9999;
+    right: 10px;
+    top: 210px;
+    border-radius: 11px;
+    font-size: 12px;
+    background-color: #f2f2f2;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: top;
+}#J-floorBrandList-1>.brand-item>.J_myFav_tag:hover{
+    background: #f32b80;
+}
+#J-floorBrandList-1>.brand-item>.J_myFav_tag:hover span{
+    background: #f32b80;
+    border-color: #f32b80;
+    color:#fff;
+}
+#J-floorBrandList-1>.brand-item>.J_myFav_tag i{
+    color:#f32b80;font-size: 13px;
+    vertical-align: text-top;
+}
+#J-floorBrandList-1>.brand-item>.J_myFav_tag:hover i{
+   color:#fff;
+}
+#J-floorBrandList-1>.brand-item>.J_myFav_tag>.ui-btn-fav-like{
+    position: relative;
+    z-index: 999;
+    padding: 0 8px;
+    width: 71px;
+    background: #fff;
+    border: 1px solid #ededed;
+    color: #333;
+    border-radius: 12px;
+    height: 18px;
+    line-height: 18px;
+}
+/*女装板块结束*/ 
