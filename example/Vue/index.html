@@ -31,6 +31,11 @@
 			width: 50px;
 			height: 50px;
 		}
+		#app p{
+			position: absolute;
+			width: 200px;
+			left: 200px;
+		}
 	</style>
 </head>
 <body>
@@ -39,6 +44,8 @@
 	        <li v-for="(item, index) of items" :class="{active: index == activeIndex}">{{ item.name }} </li>
 	    </ul>
 	    <input type="button" value="抽奖" @click='gogo()'>
+	    <p>使用 vuejs 开发一个抽奖程序，奖品为1-9元，最多抽9次，在页面上显示每次抽到的金额，并且每次抽到的金额不可重复
+	    </p>
 	</div>
 	<script>
 	var app = new Vue({
