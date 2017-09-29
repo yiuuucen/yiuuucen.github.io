@@ -117,7 +117,7 @@
 	min-height: 700px;
 	height: 100vh;
 	position: relative;
-	background: rgb(250,250,250);
+	/*background: rgb(250,250,250);*/
 	/*padding-top: 50px;*/
 }
 .centent .section2 .my_navbar{
@@ -161,7 +161,10 @@
     padding: 150px 0 0;
 	font-family:'hakuyoxingshu7000';
 	letter-spacing: 2px;
+	position: relative;
 }
+
+
 .centent .section2 hr{
 	margin: 0 auto 50px;
 	width: 70px;
@@ -170,10 +173,19 @@
 .centent .section2 div{
 	text-align: center;
 } 
-.centent .section2 div img{
+/*.centent .section2 div>img{
 	max-width: 200px;
 	width: 40%;
     border-radius: 50%;
+}*/
+.centent .section2 div span{
+	display: block;
+    width: 80px;
+    height: 80px;
+    background-image: url(../img/start.png);
+    background-position: 0px 0px;
+    margin: 0 auto;
+
 }
 .centent .section2 p{
 	
@@ -192,6 +204,7 @@
 	min-height: 700px;
 	height: 100vh;
 	position: relative;
+	background: rgb(250,250,250);
 	/*padding-top: 50px;*/
 }
 .centent .section3 .container h3{
@@ -231,7 +244,7 @@
 	height: auto;
 	min-height: 100vh;
 	position: relative;
-	background: rgb(250,250,250);
+	/*background: rgb(250,250,250);*/
 	
 }
 .centent .section4 .container h3{
@@ -322,7 +335,7 @@
 	min-height: 700px;
 	height: 100vh;
 	position: relative;
-	
+	background: rgb(250,250,250);
 	padding-top: 70px;
 }
 /*运用弹性布局*/

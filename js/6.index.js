@@ -85,6 +85,27 @@ var heg2=$oSec2.height();
  	   	$('body,html').animate({scrollTop:$oSec1.height()+$oSec2.height()+$oSec3.height()}
  	   	,1500); 	   	
  	});
+
+// 中间的小星星用雪碧图实现动态效果
+var n=0;
+var $oStart=$('#sec2>div>span');
+$oStart.mouseover(function(){
+    clearInterval($oStart.timer);
+    $oStart.timer=setInterval(function(){
+        if(n<-1040){
+            n=0;
+        }else{
+            n=n-160;
+        }
+        // $oStart.style.backgroundPositionX=n+'px';
+        $oStart.css({backgroundPositionX:n+'px'});
+         
+    },150);
+}).mouseout(function(){
+    // $oStart.style.backgroundPositionX=0+'px';
+    clearInterval($oStart.timer);
+    $oStart.css({backgroundPositionX:0+'px'});
+});
 // section2 E
 
 // section3 S
