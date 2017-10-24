@@ -9,6 +9,8 @@ body{
     font-family: "Microsoft YaHei",sans-serif;
     font-size: 0.24rem;
 }
+/*让纵向滚动条隐藏，但依然存在*/
+::-webkit-scrollbar{width:0;height:0}
 .mb{
     margin-bottom: 0.15rem;
 }
