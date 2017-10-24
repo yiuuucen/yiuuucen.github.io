@@ -1,0 +1,15 @@
+body,hr,h2,h3,ul,p{
+    margin: 0;
+}
+ul{
+    padding: 0;
+}
+hr{
+    border: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
