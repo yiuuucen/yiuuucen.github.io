@@ -163,7 +163,7 @@
             super(childFactory, position, velocity);
 
             this.explosionFactory = explosionFactory;
-            this.lifetime = 10;
+            this.lifetime = 100;
         }
 
         update(time) {
@@ -244,7 +244,7 @@
         const explosionFactory = getExplosionFactory(Math.random() * 360);
 
         const position = new Vector2(Math.random() * canvas.width, canvas.height);
-        const thrust = window.innerHeight *((Math.random()/2+0.5)*1.2);//0.6~1.2的高度
+        const thrust = window.innerHeight *((Math.random()/2+0.3)*1.2);//(0.3~0.8)*1.2的高度
         const angle = Math.PI / -2 + (Math.random() - .5) * Math.PI / 8;
         const velocity = new Vector2(Math.cos(angle) * thrust, Math.sin(angle) * thrust);
         const lifetime = 3;
@@ -272,14 +272,14 @@
         canvas.height = window.innerHeight;
         canvas.width = window.innerWidth;
     };
-
-    canvas.onclick = addRocket;
+//每点击canvas发射一个
+//    canvas.onclick = addRocket;
     document.body.appendChild(canvas);
 
     window.onresize = resize;
     resize();
-
-    setInterval(addRocket, 2000);
+//    刚出发的时候每0.001s发射一个
+    setInterval(addRocket, 1);
     render();
 </script>
 
