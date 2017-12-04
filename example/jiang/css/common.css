@@ -1,0 +1,211 @@
+/*commont*/
+.container{
+    width: 1111px;
+    margin:0 auto;
+    height: 100%;
+}
+.cl{
+    zoom: 1;
+}
+.cl:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+/*header start*/
+.header{
+    line-height: 35px;
+    background: #f5f5f5;
+}
+.header a{
+    color: #000;
+}
+.header a:hover{
+    color: red;
+}
+.header span{
+    font-size: 12px;
+}
+.header span a{
+    padding: 0 20px 0 0;
+}
+.header span:first-child{
+    margin: 0 0 0 12px;
+    float: left;
+}
+.header span:last-child{
+    float: right;
+}
+.header ul{
+
+}
+.header ul li{
+    float: left;
+    margin:0 20px 0 0;
+
+}
+.header ul li a{
+    font-size: 12px;
+    border-right: 1px solid #999;
+}
+.header ul li:last-child a{
+    border: 0;
+}
+#login a,#register a{
+    color: red;
+}
+/*header end*/
+
+/*lsg start*/
+.lsg{
+    padding: 5px 0 10px 0;
+}
+.lsg .container>div{
+    float: left;
+}
+.lsg .container>div:first-child img{
+    vertical-align:middle;
+}
+.lsg .search{
+    position: relative;
+}
+.search .subBox{
+    position: absolute;
+    width: 400px;
+    height: 40px;
+    top: 10px;
+}
+.subBoxDiv{
+    position: relative;
+    width: 400px;
+    height: 40px;
+}
+.subBoxDiv input{
+    height: 100%;
+    float: left;
+}
+.subBoxDiv input:first-child{
+    box-sizing: border-box;
+    border: 1px solid red;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+    width: 80%;
+    padding: 0 0 0 10px;
+}
+.subBoxDiv input:last-child{
+    border: 1px solid red;
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+    box-sizing: border-box;
+    width: 20%;
+    cursor: pointer;
+}
+.subBox .tishi{
+    position: absolute;
+    width: 400px;
+    height: 20px;
+    line-height: 20px;
+}
+.subBox .tishi ul{
+
+}.subBox .tishi ul>a{
+    float: right;
+    color: red;
+ }
+.subBox .tishi ul li{
+    float: left;
+    margin: 0 10px 0 0;
+}
+.subBox .tishi ul li a{
+    color: #333;
+}
+.subBox .tishi ul li a:hover{
+    color: red;
+}
+/*lsg end*/
+
+/*nav start*/
+.nav{
+    background:#000;
+    line-height: 40px;
+}
+.nav ul{
+
+}
+.nav ul li{
+    float: left;
+    margin: 0 20px 0 0;
+}
+.nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.nav ul li a:hover{
+    color:pink;
+}
+/*nav end*/
+
+/*banner start*/
+.banner{
+    height: 420px;
+    position: relative;
+}
+.banner .tup{
+
+}
+.tup ul{
+
+}
+.tup ul li{
+    width: 100%;
+    height: 420px;
+    margin: 0 auto;
+    z-index: 1;
+}
+.tup ul li:nth-child(1){
+    background: url('../img/banner01.jpg') no-repeat top center;
+    /*display: none;*/
+}
+.tup ul li:nth-child(2){
+    background: url('../img/banner02.jpg') no-repeat top center;
+    /*display: none;*/
+}
+.tup ul li:nth-child(3){
+    background: url('../img/banner03.jpg') no-repeat top center;
+    /*display: none;*/
+}
+.tup ul li:nth-child(4){
+    background: url('../img/banner04.jpg') no-repeat top center;
+    /*display: none;*/
+}
+.banner .ann{
+    width: 200px;
+    line-height: 20px;
+    position: absolute;
+    bottom:5%;
+    left:42%;
+}
+.ann ul{
+    display: flex;
+    justify-content: space-around;
+}
+.ann ul li{
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    z-index: 9;
+    opacity: 0.4;
+    border-radius: 50%;
+    background:#333;
+    border: 3px solid rgba(255,255,255,0.7);
+}
+.ann ul li a{
+    color:transparent;
+}
+.ann ul li.dActive{
+    background: #fa3778;
+}
+/*banner end*/

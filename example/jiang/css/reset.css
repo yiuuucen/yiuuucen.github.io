@@ -1,0 +1,21 @@
+body,ul{
+    margin: 0;
+}
+ul,input{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*去除点击input后的边框*/
+body{
+    font-size: 12px;
+    color: #333;
+}
+
+input{
+    outline:none;
+}
