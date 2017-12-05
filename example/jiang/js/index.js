@@ -6,7 +6,7 @@ function change_banner(num){
     var li_index = $(".tup li:visible").index();
     console.log(li_index);
     var next_li_index=li_index+1;
-    if(next_li_index==4){
+    if(next_li_index==$('.tup li').length){
         next_li_index=0
     };
     $('.ann li').removeClass('dActive');
@@ -70,3 +70,18 @@ $('.product_next2').mouseover(function(){
 $('.product_next2').mouseout(function(){
     $(this).css('border','1px solid #fff');
 })
+// 顶部条这个div，点击后回到顶部
+$(".returnD").click(function(){
+    $('body,html').animate({scrollTop:0},600);
+})
+window.onscroll = function(){ //绑定scroll事件
+    //获取滚动距离
+    var t = document.documentElement.scrollTop || document.body.scrollTop;
+    var heg1=$('.banner').height();
+    // 当滚动条到达时，出现出顶部条这个div
+    if( t >= heg1 ) {
+        $('.returnD').css('display','block');
+    } else {
+        $('.returnD').css('display','none');
+    }
+}
