@@ -62,3 +62,11 @@ $('.nav ul li a').mouseout(function(){
         $(This).css('color','#fff');
     },300)
 })
+//随机颜色作用的cont的新品边框上
+$('.product_next2').mouseover(function(){
+    $(this).css('border','1px double '+getRandomColor()+'');
+    //alert(getRandomColor);
+});
+$('.product_next2').mouseout(function(){
+    $(this).css('border','1px solid #fff');
+})
