@@ -71,17 +71,16 @@ $('.product_next2').mouseout(function(){
     $(this).css('border','1px solid #fff');
 })
 // 顶部条这个div，点击后回到顶部
-$(".returnD").click(function(){
+$("#returnD").click(function(){
     $('body,html').animate({scrollTop:0},600);
 })
 window.onscroll = function(){ //绑定scroll事件
     //获取滚动距离
     var t = document.documentElement.scrollTop || document.body.scrollTop;
-    var heg1=$('.banner').height();
-    // 当滚动条到达时，出现出顶部条这个div
-    if( t >= heg1 ) {
-        $('.returnD').css('display','block');
+    // 当滚动条到达600px时，出现出顶部条这个div
+    if( t >= 600 ) {
+        $('#returnD').css('display','block');
     } else {
-        $('.returnD').css('display','none');
+        $('#returnD').css('display','none');
     }
 }

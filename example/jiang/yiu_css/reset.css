@@ -1,4 +1,4 @@
-body,ul,p,dl,dd{
+body,ul,p,dl,dd,h2,h3{
     margin: 0;
 }
 ul,input{
@@ -11,7 +11,11 @@ a{
     text-decoration: none;
 }
 /*去除点击input后的边框*/
+html{
+    height: 100%;
+}
 body{
+    height: 100%;
     font-size: 12px;
     color: #333;
     overflow-x:hidden
