@@ -39,6 +39,12 @@
             </div>
         </div>
     </div>
+    <div class="tishi">
+        <div class="tishicont">
+            <img src="yiu_img/icon-error.png" alt="">
+            <p>请您填写完整的信息</p>
+        </div>
+    </div>
 </div>
 <script src="yiu_js/jquery-3.2.1.min.js"></script>
 <script src="yiu_js/index.js"></script>
@@ -48,25 +54,30 @@
         var tel=null;
         var p1=null;
         var p2=null;
+        function showMsg(tuUrl,message){
+            $('.tishi').css('display','block');
+            $('.tishicont>img').attr('src',tuUrl);
+            $('.tishicont>p').html(message);
+        }
         function order(name,tel,p1,p2) {
             if (name == ""||p1 == "" || p2 == "") {
-                alert("请您填写完整的信息");
+                showMsg('yiu_img/icon-error.png','请您填写完整的信息');
                 return false;
             }
             if (tel.trim().length == 0) {
-                alert("请输入您的手机号");
+                showMsg('yiu_img/icon-error.png','请输入您的手机号');
                 return false;
             }
             if (!(/^1[123456789][0-9]{9}$/).test(tel)) {
-                alert("请正确输入手机号");
+                showMsg('yiu_img/icon-error.png','请正确输入手机号');
                 return false;
             }
             if(p1!=p2){
-                alert('两次输入的密码不同');
+                showMsg('yiu_img/icon-error.png','两次输入的密码不同');
                 return false;
             }
             else{
-                alert('成功')
+                showMsg('yiu_img/icon-success.png','注册成功');
             }
         }
         $('#ok').click(function(){
@@ -76,7 +87,9 @@
             p2=$('#p2').val();
 
             order(name,tel,p1,p2);
-
+            setTimeout(function(){
+                $('.tishi').css('display','none');
+            },2000)
         });
 
 //            var g = window.localStorage.getItem("sligleG");
