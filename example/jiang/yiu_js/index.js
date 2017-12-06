@@ -4,7 +4,6 @@ function change_banner(num){
     //让下一张图片显示
 
     var li_index = $(".tup li:visible").index();
-    console.log(li_index);
     var next_li_index=li_index+1;
     if(next_li_index==$('.tup li').length){
         next_li_index=0

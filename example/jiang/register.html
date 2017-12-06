@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="shortcut icon" href="hh.ico">
+    <link rel="stylesheet" href="yiu_css/reset.css">
+    <link rel="stylesheet" href="yiu_css/common.css">
+    <link rel="stylesheet" href="yiu_css/font-awesome.css">
+</head>
+<body>
+<div class="loginYM cl">
+    <div class="header cl">
+        <div class="container">
+            <div class="headl">
+                <a href="./index.html"><img src="yiu_img/logo.png" alt=""></a>
+            </div>
+            <div class="headr">
+                还没有账户？<a href="./login.html">登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="center cl">
+        <div class="container">
+            <div class="loginform">
+                <form action="" method="get" class="loginRight">
+                    <h2>Sign up</h2>
+                    <h3><i class="fa fa-user"></i>&nbsp;Username</i></h3>
+                    <input type="text" class="name" id="name">
+                    <h3><i class="fa fa-phone"></i>&nbsp;Telephone</i></h3>
+                    <input type="text" id="tel">
+                    <h3><i class="fa fa-unlock-alt"></i>&nbsp;&nbsp;Password</i></h3>
+                    <input type="password" class="pwd" id="p1">
+                    <h3>Repeat Password</i></h3>
+                    <input type="password" class="pwd" id="p2">
+                    <button type="button" id="ok">Register</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="yiu_js/jquery-3.2.1.min.js"></script>
+<script src="yiu_js/index.js"></script>
+<script>
+        //console.log($('#tel').val());
+        var name=null;
+        var tel=null;
+        var p1=null;
+        var p2=null;
+        function order(name,tel,p1,p2) {
+            if (name == ""||p1 == "" || p2 == "") {
+                alert("请您填写完整的信息");
+                return false;
+            }
+            if (tel.trim().length == 0) {
+                alert("请输入您的手机号");
+                return false;
+            }
+            if (!(/^1[123456789][0-9]{9}$/).test(tel)) {
+                alert("请正确输入手机号");
+                return false;
+            }
+            if(p1!=p2){
+                alert('两次输入的密码不同');
+                return false;
+            }
+            else{
+                alert('成功')
+            }
+        }
+        $('#ok').click(function(){
+            name=$('#name').val();
+            tel=$('#tel').val();
+            p1=$('#p1').val();
+            p2=$('#p2').val();
+
+            order(name,tel,p1,p2);
+
+        });
+
+//            var g = window.localStorage.getItem("sligleG");
+//            if(!g){
+//                g = 0;
+//            }
+            // var data = '{"shoujihao":"'+ shoujihao + '","peixunfenlei":"' + peixunfenlei+ '","laiyuan":"'+laiyuan+'","xingming":"' + xingming + '","chengshi_id":"' + chengshi_id+ '","mendian_id":"'+mendian_id+'"}';
+//            var data = "{\"shoujihao\":\"" + shoujihao + "\",\"peixunfenlei\":\"" + peixunfenlei + "\",\"laiyuan\":\""+laiyuan+"\",\"xingming\":\""+xingming+"\",\"chengshi_id\":"+chengshi_id+",\"mendian_id\":"+mendian_id+"}";
+//            var senddata = '{' + window.parameterPost + ',"data":' + data +
+//                    ',"dataType":"json","sign": "1","token": "login"}';
+//            console.log(data);
+//            ajaxData("POST", window.hostUrl + "appdata.svc/i_p_shoujipeixunbaoming", senddata, function (data) {
+//                console.log(senddata);
+//                if(data.status==1){
+//                    data.message="您的预报名信息提交成功，请保持电话畅通。";
+//                    showerror(data.message,"success");
+//                    console.log(data);
+//                }else if(data.status==4){
+//                    data.message="请您填写完整的预报名信息";
+//                    showerror(data.message,"success");
+//                }else if(data.status==-1){
+//                    data.message="您已经报名此培训，无需重复报名";
+//                    showerror(data.message,"success");
+//                }else{
+//                    showerror(data.message,"error");
+//                }
+//            }, function () {
+//                console.log("操作失败");
+//            });
+//        };
+
+</script>
+</body>
+</html>

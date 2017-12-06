@@ -436,21 +436,18 @@
 }
 /*foot-link end*/
 
-/************************************登录 loginYM******************************************/
+/************************************登录注册 loginYM  ******************************************/
 .loginYM{
-    height: 100%;
     background: url("../yiu_img/loginBG.jpg");
     background-size: cover;
-    position: relative;
+    height: 100%;
 }
-.loginYM .indexYM{
-    width: 100%;
-    opacity: 0.6;
-    position: absolute;
-    bottom: 0;
-}
+/*.loginYM .indexYM{*/
+    /*width: 100%;*/
+    /*opacity: 0.6;*/
+/*}*/
 .loginYM .header{
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #444;
 }
 .loginYM .header .container{
     display: flex;
@@ -479,7 +476,7 @@
     text-align: center;
     background: #eee;
     border-radius: 50px;
-    padding:30px 0;
+    padding:15px 0 50px ;
     margin: 20px 0;
 }
 .loginYM .loginform .loginRight>h2{
@@ -518,12 +515,14 @@
     top: 2px;
 }
 .loginYM .loginform .loginRight button{
-    width: 283px;
+    width: 110px;
     height: 33px;
+    margin: 10px 25px;
     border-radius:20px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     border: 0;
     background: hotpink;
-    outline:none
+    outline:none;
+    float: left;
 }
