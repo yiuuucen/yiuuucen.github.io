@@ -60,8 +60,16 @@
             $('.tishicont>p').html(message);
         }
         function order(name,tel,p1,p2) {
-            if (name == ""||p1 == "" || p2 == "") {
-                showMsg('yiu_img/icon-error.png','请您填写完整的信息');
+            if (name == "") {
+                showMsg('yiu_img/icon-error.png','请您输入名字');
+                return false;
+            }
+            if (p1 == "" ) {
+                showMsg('yiu_img/icon-error.png','请您输入密码');
+                return false;
+            }
+            if (p2 == "") {
+                showMsg('yiu_img/icon-error.png','请您再次输入密码');
                 return false;
             }
             if (tel.trim().length == 0) {
