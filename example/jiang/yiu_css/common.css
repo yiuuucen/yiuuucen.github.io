@@ -442,23 +442,21 @@
     background-size: cover;
     height: 100%;
 }
-/*.loginYM .indexYM{*/
-    /*width: 100%;*/
-    /*opacity: 0.6;*/
-/*}*/
 .loginYM .header{
+    height: 80px;
     border-bottom: 1px solid #444;
 }
 .loginYM .header .container{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .loginYM .header .headl img{
-    width: 200px;
-    margin: 20px 0 0 0;
+    height: 100%;
+    padding: 10px 0 0 0;
+    box-sizing: border-box;
 }
 .loginYM .header .headr{
-    margin: 110px 0 0 600px;
+    margin: 55px 0 0 500px;
     font-weight:bold;
 }
 .loginYM .header .headr a{
@@ -542,9 +540,9 @@
     position: absolute;
     top: 20%;
     left:38%;
-   text-align: center;
-   background: #fff;
-    border-radius: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 30%;
 }
 .loginYM .tishi .tishicont img{
     width: 100px;
@@ -553,3 +551,191 @@
 .loginYM .tishi .tishicont p{
     font-size: 20px;
 }
+/******************************************个人中心 personalYM******************************/
+.personalYM{
+    /*background: url("../yiu_img/loginBG.jpg");*/
+    /*background-size: cover;*/
+    height: 100%;
+}
+.personalYM .header{
+    height: 80px;
+    /*background: rgb(72,137,196);*/
+}
+.personalYM .header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.personalYM .header .headl{
+    overflow: hidden;
+    padding: 1px;
+    line-height: 80px;
+}
+.personalYM .header .headl a{
+    margin: 0 0 0 50px;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    color: #000;
+}
+.personalYM .header .headl a:hover{
+    color: #2d76fc;
+}
+.personalYM .header .headl img{
+    height: 100%;
+    padding: 10px 0 0 0;
+    box-sizing: border-box;
+    float: left;
+}
+.personalYM .header .headr{
+    overflow: hidden;
+    padding: 1px;
+    line-height: 80px;
+
+}
+.personalYM .header .headr a{
+    margin: 0 0 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    color: #000;
+}
+.personalYM .header .headr a:hover{
+    color: #2d76fc;
+}
+/*cont start*/
+.personalYM .cont{
+    background: url("../yiu_img/personal.jpg");
+    background-size:cover;
+    height: 150px;
+    position: relative;
+}
+.personalYM .cont .tou{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow:0px 0px 3px 1px #ddd; ;
+    top: 40px;
+    left: 200px;
+    background:url("../yiu_img/tou.jpg");
+    background-size:cover;
+    position: absolute;
+    z-index: 50;
+}
+.personalYM .cont p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    left: 270px;
+    border-radius: 20px;
+    padding: 30px 80px 30px 120px;
+    background: rgba(255,255,255,0.1);
+    z-index: 49;
+}
+/*cont end*/
+
+/*mymsg start*/
+.personalYM .mymsg{
+    /*height: 600px;*/
+    /*background: pink;*/
+    padding: 30px 0 100px;
+}
+.personalYM .mymsg .container{
+    display: flex;
+    justify-content: space-between;
+}
+.personalYM .mymsg .left{
+
+}
+.personalYM .mymsg .left ul{
+
+}
+.personalYM .mymsg .left ul li{
+    padding: 20px 0 20px 150px;
+
+}
+.personalYM .mymsg .left ul li a{
+    font-size: 16px;
+    color: #000;
+    padding:  20px 0;
+    border-bottom:1px dashed #555;
+}
+.personalYM .mymsg .right{
+    width: 800px ;
+    border: 1px solid #999;
+}
+.personalYM .mymsg .right .msgtitle{
+    font-size: 20px;
+    padding: 0 0 0 20px;
+    margin: 20px 0 40px 20px;
+    font-weight: bold;
+    border-left: 5px solid #0048ff;
+
+}
+.personalYM .mymsg .right .form-item{
+    margin-bottom: 22px;
+    padding: 22px 0 0 0;
+    /*border-top: 1px dotted #999;*/
+    float: left;
+    width: 800px;
+}
+.personalYM .mymsg .right .form-item label{
+    width: 95px;
+    text-align: right;
+    margin-right: 20px;
+    float: left;
+    line-height: 30px;
+    padding: 0;
+}
+.personalYM .mymsg .right .form-item input{
+    float: left;
+    width: 225px;
+    height: 30px;
+    margin-right: 40px;
+    border-radius: 4px;
+    border: 1px solid #bfcbd9;
+    box-sizing: border-box;
+    color: #1f2d3d;
+    font-size: inherit;
+    height: 36px;
+    line-height: 1;
+    outline: 0;
+    padding: 3px 10px;
+}
+.personalYM .mymsg .right .form-item button{
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 0 0 0 200px;
+    border: none;
+    background: pink;
+    outline: none;
+}
+.personalYM .foot-link{
+    background: #000;
+    width: 100%;
+}
+.personalYM .foot-link .linkboard{
+    padding: 26px 0 10px;
+}
+.personalYM .foot-link .linkboard a{
+    display: block;
+    color: #fff;
+    float: left;
+    padding: 5px;
+}
+.personalYM .foot-link .linkboard .fen{
+    display: inline-block;
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+.personalYM .foot-link .copyright{
+    padding: 5px 0 10px 5px;
+    line-height: 12px;
+    color: #fff;
+}
+/*foot-link end*/
+/*mymsg end*/
