@@ -715,7 +715,7 @@
 .personalYM .mymsg .right .goods ol>li{
     border-bottom: 1px dotted #999;
 }
-.personalYM .mymsg .right .goods ol>li:last-child{
+.personalYM .mymsg .tab0 .goods ol>li:last-child{
     border: none;
 }
 .personalYM .mymsg .right .goods ul{
@@ -780,11 +780,15 @@
 .personalYM .mymsg .tab1 .dingd ul li:nth-child(5){
     width: 15%;
 }
-.personalYM .mymsg .right .goods{
-    margin: 1px;
+.personalYM .mymsg .tab1 .goods{
+
 }
-.personalYM .mymsg .right .goods ol>li:last-child{
-    border: none;
+.personalYM .mymsg .tab1 .goods>a{
+    float: right;
+    padding: 15px;
+    margin: 5px;
+    color: #fff;
+    background: #666;
 }
 .personalYM .mymsg .right .goods ul{
     line-height: 28px;
