@@ -34,46 +34,285 @@
             <div class="container">
                 <div class="left">
                     <ul>
-                        <li><a href=""><i class="fa fa-child"></i>&nbsp;个人中心</a></li>
-                        <li><a href=""><i class="fa fa-shopping-cart"></i>&nbsp;我的订单</a></li>
-                        <li><a href=""><i class="fa fa-user-circle-o"></i>&nbsp;个人信息</a></li>
-                        <li><a href=""><i class="fa fa-lock"></i>&nbsp;密码修改</a></li>
-                        <li><a href=""><i class="fa fa-home"></i>&nbsp;收货地址</a></li>
-                        <li><a href=""><i class="fa fa-list"></i>&nbsp;在线留言</a></li>
+                        <li class="fActive"><i class="fa fa-child"></i>&nbsp;个人信息</li>
+                        <li><i class="fa fa-shopping-cart"></i>&nbsp;我的订单</li>
+                        <li><i class="fa fa-user-circle-o"></i>&nbsp;个人中心</li>
+                        <li><i class="fa fa-lock"></i>&nbsp;密码修改</li>
+                        <li><i class="fa fa-home"></i>&nbsp;收货地址</li>
+                        <li><i class="fa fa-list"></i>&nbsp;在线留言</li>
                     </ul>
                 </div>
-                <div class="right">
-                    <div class="msgtitle">个人中心</div>
-                    <div>
+                <div class="tab">
+                    <div class="right tab0">
+                        <div class="msgtitle">个人信息</div>
                         <form action="" class="cl">
-                            <div class="form-item">
-                                <label for="mymsg-use">用户名</label>
-                                <input type="text" id="mymsg-use">
+                            <div class="dingd cl">
+                                <ul>
+                                    <li>用户名</li>
+                                    <li>邮编</li>
+                                    <li>真实姓名</li>
+                                    <li>联系电话</li>
+                                    <li>收货地址</li>
+                                    <li>操作</li>
+                                </ul>
                             </div>
-                            <div class="form-item">
-                                <label for="mymsg-yb">邮编</label>
-                                <input type="text" id="mymsg-yb">
-                            </div>
-                            <div class="form-item">
-                                <label for="mymsg-name">真实姓名</label>
-                                <input type="text" id="mymsg-name">
-                            </div>
-                            <div class="form-item">
-                                <label for="mymsg-tel">联系电话</label>
-                                <input type="text"id="mymsg-tel">
-                            </div>
-                            <div class="form-item">
-                                <label for="mymsg-id">身份证</label>
-                                <input type="text" id="mymsg-id">
-                            </div>
-                            <div class="form-item">
-                                <label for="mymsg-add">地址</label>
-                                <input type="text" id="mymsg-add">
-                            </div>
-                            <div class="form-item">
-                                <button type="submit">提交</button>
+                            <div class="goods">
+                                <ol>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <strong>胡帅</strong>
+                                            </li>
+                                            <li>
+                                                <strong>666666</strong>
+                                            </li>
+                                            <li>
+                                                <strong>胡大帅</strong>
+                                            </li>
+                                            <li>
+                                                <strong>13666668888</strong>
+                                            </li>
+                                            <li>
+                                                <strong>北京市北京大学校草</strong>
+                                            </li>
+                                            <li>
+                                                <a href="">修改</a>
+                                                <a href="">删除</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <strong>二少</strong>
+                                            </li>
+                                            <li>
+                                                <strong>666666</strong>
+                                            </li>
+                                            <li>
+                                                <strong>江二少</strong>
+                                            </li>
+                                            <li>
+                                                <strong>13666668888</strong>
+                                            </li>
+                                            <li>
+                                                <strong>北京市北大青鸟学校校草</strong>
+                                            </li>
+                                            <li>
+                                                <a href="">修改</a>
+                                                <a href="">删除</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
                             </div>
                         </form>
+                    </div>
+                    <div class="right tab1">
+                        <div class="msgtitle">我的订单</div>
+                        <form action="" class="cl">
+                            <div class="dingd cl">
+                                <ul>
+                                    <li>商品</li>
+                                    <li>单价</li>
+                                    <li>数量</li>
+                                    <li>总金额</li>
+                                    <li>操作</li>
+                                </ul>
+                            </div>
+                            <div class="goods">
+                                <ol>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox">
+                                                <img src="yiu_img/prodd01.jpg" alt="">
+                                                <p>肌肤之钥 光透妆前乳SPF 24 PA++ 30毫升</p>
+                                            </li>
+                                            <li>
+                                                <strong>￥666.66</strong>
+                                            </li>
+                                            <li>
+                                                <button type="button">-</button>
+                                                <input type="text" value="1">
+                                                <button type="button">+</button>
+                                            </li>
+                                            <li>
+                                                <strong>￥666.66</strong>
+                                            </li>
+                                            <li>
+                                                <a href="">收藏</a>
+                                                <a href="">删除</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox">
+                                                <img src="yiu_img/prodd01.jpg" alt="">
+                                                <p>肌肤之钥 光透妆前乳SPF 24 PA++ 30毫升</p>
+                                            </li>
+                                            <li>
+                                                <strong>￥666.66</strong>
+                                            </li>
+                                            <li>
+                                                <button type="button">-</button>
+                                                <input type="text" value="1">
+                                                <button type="button">+</button>
+                                            </li>
+                                            <li>
+                                                <strong>￥666.66</strong>
+                                            </li>
+                                            <li>
+                                                <a href="">收藏</a>
+                                                <a href="">删除</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox">
+                                                <img src="yiu_img/prodd01.jpg" alt="">
+                                                <p>肌肤之钥 光透妆前乳SPF 24 PA++ 30毫升</p>
+                                            </li>
+                                            <li>
+                                                <strong>￥666.66</strong>
+                                            </li>
+                                            <li>
+                                                <button type="button">-</button>
+                                                <input type="text" value="1">
+                                                <button type="button">+</button>
+                                            </li>
+                                            <li>
+                                                <strong>￥666.66</strong>
+                                            </li>
+                                            <li>
+                                                <a href="">收藏</a>
+                                                <a href="">删除</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox">
+                                                <img src="yiu_img/prodd01.jpg" alt="">
+                                                <p>肌肤之钥 光透妆前乳SPF 24 PA++ 30毫升</p>
+                                            </li>
+                                            <li>
+                                                <strong>￥666.66</strong>
+                                            </li>
+                                            <li>
+                                                <button type="button">-</button>
+                                                <input type="text" value="1">
+                                                <button type="button">+</button>
+                                            </li>
+                                            <li>
+                                                <strong>￥666.66</strong>
+                                            </li>
+                                            <li>
+                                                <a href="">收藏</a>
+                                                <a href="">删除</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="right tab2">
+                        <div class="msgtitle">个人中心</div>
+                        <div>
+                            <form action="" class="cl">
+                                <div class="form-item">
+                                    <label for="mymsg-use">用户名</label>
+                                    <input type="text" id="mymsg-use">
+                                </div>
+                                <div class="form-item">
+                                    <label for="mymsg-yb">邮编</label>
+                                    <input type="text" id="mymsg-yb">
+                                </div>
+                                <div class="form-item">
+                                    <label for="mymsg-name">真实姓名</label>
+                                    <input type="text" id="mymsg-name">
+                                </div>
+                                <div class="form-item">
+                                    <label for="mymsg-sex">性别</label>
+                                    <input type="text" id="mymsg-sex">
+                                </div>
+                                <div class="form-item">
+                                    <label for="mymsg-tel">联系电话</label>
+                                    <input type="text"id="mymsg-tel">
+                                </div>
+                                <div class="form-item">
+                                    <label for="mymsg-id">身份证</label>
+                                    <input type="text" id="mymsg-id">
+                                </div>
+                                <div class="form-item">
+                                    <button type="submit">提交</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right tab3">
+                        <div class="msgtitle">修改密码</div>
+                        <div>
+                            <form action="" class="cl">
+                                <div class="form-item">
+                                    <label for="mymsg-pwd1">原密码</label>
+                                    <input type="text" id="mymsg-pwd1">
+                                </div>
+                                <div class="form-item">
+                                    <label for="mymsg-pwd2">新密码</label>
+                                    <input type="text" id="mymsg-pwd2">
+                                </div>
+                                <div class="form-item">
+                                    <label for="mymsg-pwd3">确认密码</label>
+                                    <input type="text" id="mymsg-pwd3">
+                                </div>
+                                <div class="form-item">
+                                    <button type="submit">提交</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right tab4">
+                        <div class="msgtitle">收货地址</div>
+                        <div>
+                            <form action="" class="cl">
+                                <div class="form-item">
+                                    <label for="mymsg-add">收货地址</label>
+                                    <input type="text" id="mymsg-add">
+                                </div>
+                                <div class="form-item">
+                                    <button type="submit">提交</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right tab5">
+                        <div class="msgtitle">在线留言</div>
+                        <div>
+                            <form action="" class="cl">
+                                <div class="form-item">
+                                    <label for="mymsg-usee">用户名</label>
+                                    <input type="text" id="mymsg-usee">
+                                </div>
+                                <div class="form-item">
+                                    <label for="mymsg-tell">联系电话</label>
+                                    <input type="text"id="mymsg-tell">
+                                </div>
+                                <div class="form-item">
+                                    <label for="mymsg-cont">留言内容</label>
+                                    <textarea type="text" id="mymsg-cont"></textarea>
+                                </div>
+                                <div class="form-item">
+                                    <button type="submit">提交</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -14,7 +14,8 @@ function change_banner(num){
     $(".tup li").eq(next_li_index).fadeIn(0);
 
 };
-$(function(){
+
+
     //轮播初始化图片
     $('.tup li').hide();
     $('.tup li').eq(0).fadeIn(0);
@@ -42,7 +43,6 @@ $(function(){
         var ban_interval=setInterval('change_banner()',3000);
 
 
-})
 //取得随机颜色
 var getRandomColor = function(){
     return  '#' +
@@ -83,3 +83,16 @@ window.onscroll = function(){ //绑定scroll事件
         $('#returnD').css('display','none');
     }
 }
+//personal页面的中tab切换功能
+$('.personalYM .mymsg .tab .right').hide();
+$('.personalYM .mymsg .left li').attr('class','');
+$('.personalYM .mymsg .tab .right').eq(0).show();
+$('.personalYM .mymsg .left li').eq(0).attr('class','fActive');
+$('.personalYM .mymsg .left li').click(function(){
+    //console.log($(this).index())
+    $('.personalYM .mymsg .left li').attr('class','');
+    $('.personalYM .mymsg .tab .right').hide();
+    $('.personalYM .mymsg .left li').eq($(this).index()).attr('class','fActive');
+    $('.personalYM .mymsg .tab .right').eq($(this).index()).show();
+})
+
