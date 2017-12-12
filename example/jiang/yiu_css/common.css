@@ -656,9 +656,10 @@
 }
 .personalYM .mymsg .left ul li{
     padding: 20px;
+}
+.personalYM .mymsg .left ul li a{
     font-size: 16px;
     color: #000;
-    cursor: pointer;
 }
 .personalYM .mymsg .left ul li.fActive{
     background:rgb(175,175,175);
