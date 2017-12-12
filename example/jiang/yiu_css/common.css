@@ -656,6 +656,7 @@
 }
 .personalYM .mymsg .left ul li{
     padding: 20px;
+    margin: 5px;
 }
 .personalYM .mymsg .left ul li a{
     font-size: 16px;
@@ -781,13 +782,21 @@
 .personalYM .mymsg .tab1 .dingd ul li:nth-child(5){
     width: 15%;
 }
-.personalYM .mymsg .tab1 .goods{
-
+.personalYM .mymsg .tab1 .goods .zongji{
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #000;
+}
+.personalYM .mymsg .tab1 .goods .zongji strong{
+    color: red;
 }
 .personalYM .mymsg .tab1 .goods>a{
     float: right;
     padding: 15px;
-    margin: 5px;
+    margin: 10px;
     color: #fff;
     background: #666;
 }
@@ -878,9 +887,6 @@
     width: 225px;
     height: 250px;
 }
-
-
-
 .personalYM .foot-link{
     background: #000;
     width: 100%;
@@ -907,3 +913,191 @@
 }
 /*foot-link end*/
 /*mymsg end*/
+
+
+/******************************************产品详情 productYM******************************/
+/*头和尾是直接用的indexYM中的模板*/
+/*header start*/
+.productYM .header{
+    line-height: 35px;
+    background: #f5f5f5;
+}
+.productYM .header a{
+    color: #000;
+}
+.productYM .header a:hover{
+    color: red;
+}
+.productYM .header span{
+    font-size: 12px;
+}
+.productYM .header span a{
+    padding: 0 20px 0 0;
+}
+.productYM .header span:first-child{
+    margin: 0 0 0 12px;
+    float: left;
+}
+.productYM .header span:last-child{
+    float: right;
+}
+.productYM .header ul li{
+    float: left;
+    margin:0 20px 0 0;
+}
+.productYM .header ul li a{
+    font-size: 12px;
+    border-right: 1px solid #999;
+}
+.productYM .header ul li:last-child a{
+    border: 0;
+}
+.productYM #login a,#register a{
+    color: red;
+}
+/*header end*/
+
+/*lsg start*/
+.productYM .lsg{
+    padding: 15px 0 15px 0;
+}
+.productYM .lsg .container>div{
+    float: left;
+}
+.productYM .lsg .container>div:first-child img{
+    vertical-align:middle;
+}
+.productYM .lsg .search{
+    position: relative;
+}
+.productYM .search .subBox{
+    position: absolute;
+    width: 400px;
+    height: 40px;
+    top: 10px;
+}
+.productYM .subBoxDiv{
+    position: relative;
+    width: 400px;
+    height: 40px;
+}
+.productYM .subBoxDiv input{
+    height: 100%;
+    float: left;
+}
+.productYM .subBoxDiv input:first-child{
+    box-sizing: border-box;
+    border: 1px solid red;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+    width: 80%;
+    padding: 0 0 0 10px;
+}
+.productYM .subBoxDiv input:last-child{
+    border: 1px solid red;
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+    box-sizing: border-box;
+    width: 20%;
+    cursor: pointer;
+}
+.productYM .subBox .tishi{
+    position: absolute;
+    width: 400px;
+    height: 20px;
+    line-height: 20px;
+}
+.productYM .subBox .tishi ul>a{
+    float: right;
+    color: red;
+}
+.productYM .subBox .tishi ul li{
+    float: left;
+    margin: 0 10px 0 0;
+}
+.productYM .subBox .tishi ul li a{
+    color: #333;
+}
+.productYM .subBox .tishi ul li a:hover{
+    color: red;
+}
+/*lsg end*/
+
+/*nav start*/
+.productYM .nav{
+    background:#000;
+    line-height: 40px;
+}
+.productYM .nav ul li{
+    float: left;
+    margin: 0 20px 0 0;
+}
+.productYM .nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+/*nav end*/
+/*foot-co start*/
+.productYM .foot-co .foot-left{
+    width: 750px;
+    padding: 5px 0 60px;
+    float: left;
+}
+.productYM .foot-co .foot-left .item-co{
+    width: 90px;
+    float: left;
+    margin: 16px 80px 0 0;
+    overflow: hidden;
+}
+.productYM .foot-co .foot-left .item-co dl{
+    line-height: 2em;
+}
+.productYM .foot-co .foot-left .item-co dt a{
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+}
+.productYM .foot-co .foot-left .item-co dd a{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    font-size: 12px;
+    line-height: 25px;
+    color: #999;
+}
+.productYM .foot-co .foot-right{
+    width: 350px;
+    padding: 5px 0 60px;
+    float: right;
+}
+/*foot-co end*/
+
+/*foot-link start*/
+.productYM .foot-link{
+    background: #000;
+    width: 100%;
+}
+.productYM .foot-link .linkboard{
+    padding: 26px 0 10px;
+}
+.productYM .foot-link .linkboard a{
+    display: block;
+    color: #fff;
+    float: left;
+    padding: 5px;
+}
+.productYM .foot-link .linkboard .fen{
+    display: inline-block;
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+.productYM .foot-link .copyright{
+    padding: 5px 0 10px 5px;
+    line-height: 12px;
+    color: #fff;
+}
+/*foot-link end*/
