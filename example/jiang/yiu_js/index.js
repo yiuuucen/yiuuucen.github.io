@@ -96,3 +96,72 @@ window.onscroll = function(){ //绑定scroll事件
 //    $('.personalYM .mymsg .tab .right').eq($(this).index()).show();
 //})
 
+//商品详情页面中图片的放大镜功能
+
+    $.fn.magnifying = function(){
+        var that = $(this),
+            $imgCon = that.find('.prodtu'),//正常图片容器
+            $Img = $imgCon.find('img'),//正常图片，还有放大图片集合
+            $Drag = that.find('.huak'),//拖动滑动容器
+            $show = that.find('.bigtu'),//放大镜显示区域
+            $showIMg = $show.find('img'),//放大镜图片
+            $ImgList = $('#prod-l> ul > li >img'),
+            multiple = $show.width()/$Drag.width();
+
+        $imgCon.mousemove(function(e){
+            $Drag.css('display','block');
+            $show.css('display','block');
+            //获取坐标的两种方法
+            // var iX = e.clientX - this.offsetLeft - $Drag.width()/2,
+            // 	iY = e.clientY - this.offsetTop - $Drag.height()/2,
+            var iX = e.pageX - $(this).offset().left - $Drag.width()/2,
+                iY = e.pageY - $(this).offset().top - $Drag.height()/2,
+                MaxX = $imgCon.width()-$Drag.width(),
+                MaxY = $imgCon.height()-$Drag.height();
+
+            /*这一部分可代替下面部分，判断最大最小值
+             var DX = iX < MaxX ? iX > 0 ? iX : 0 : MaxX,
+             DY = iY < MaxY ? iY > 0 ? iY : 0 : MaxY;
+             $Drag.css({left:DX+'px',top:DY+'px'});
+             $showIMg.css({marginLeft:-3*DX+'px',marginTop:-3*DY+'px'});*/
+
+            iX = iX > 0 ? iX : 0;
+            iX = iX < MaxX ? iX : MaxX;
+            iY = iY > 0 ? iY : 0;
+            iY = iY < MaxY ? iY : MaxY;
+            $Drag.css({left:iX+'px',top:iY+'px'});
+            $showIMg.css({marginLeft:-multiple*iX+'px',marginTop:-multiple*iY+'px'});
+            //return false;
+        });
+        $imgCon.mouseout(function(){
+            $Drag.css('display','none');
+            $show.css('display','none');
+        });
+
+        $ImgList.click(function(){
+            var NowSrc = $(this).data('bigimg');
+            $Img.attr('src',NowSrc);
+            $(this).parent().addClass('tActive').siblings().removeClass('tActive');
+        });
+    }
+
+    $("#prod-l").magnifying();
+
+
+
+//商品详情页面中的tab切换功能
+console.log($('.productYM .details .tab div'))
+console.log($('.productYM .details .tab ul li'))
+var $tabLi=$('.productYM .details .tab ul li');
+var $tabDiv=$('.productYM .details .tab div');
+//初始化
+$tabDiv.eq(0).css('display','block');
+$tabLi.eq(0).attr('class','hActive');
+$tabLi.click(function(){
+    var index=$(this).index();
+    $tabDiv.css('display','none');
+    $tabDiv.eq(index).css('display','block');
+    $tabLi.attr('class','');
+    $tabLi.eq(index).attr('class','hActive');
+})
+
