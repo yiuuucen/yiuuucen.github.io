@@ -1054,7 +1054,7 @@
     padding: 20px;
 }
 .productYM .details .prod{
-    margin: 50px 0 100px 100px;
+    margin: 50px 0 30px 100px;
 }
 .productYM .prod-l{
     width: 300px;
@@ -1167,9 +1167,22 @@
 .productYM .prod-r .num{
     font-size: 16px;
     padding: 10px 0;
+    display: flex;
+    align-items: center;
 }
 .productYM .prod-r .num input{
    width: 30px;
+}
+.productYM .prod-r .num>a{
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    color: #000;
+    line-height: 15px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    overflow: hidden;
 }
 .productYM .prod-r .ml{
     width: 300px;
@@ -1222,29 +1235,35 @@
 .productYM .tab ul{
     display: flex;
     justify-content: flex-start;
+    background: #f2f2f2;
+    border:1px solid #000; 
+    border-top: #255CA2 2px solid;
+    border-bottom: none;
 }
 .productYM .tab ul li{
-    padding: 15px;
-    background:#fff;
-    border: 2px solid #000;
+    padding: 10px 20px;
+    border-right: 1px solid #999;
     font-size:15px;
     font-weight: bold;
-    border-bottom: none;
-    margin: 0 30px 0 0 ;
-    border-radius: 5px 5px 0 0;
     cursor: pointer;
 }
 .productYM .tab ul li.hActive{
-    background: green;
+    background: #2384F1;
+    color: #fff;
 }
 .productYM .tab div{
-    border: 2px solid #666;
-    height: 300px;
     display: none;
 }
 .productYM .tab .miaoshu{
 
 }
+.productYM .miaoshu .buydlList{ min-height:200px; height: auto !important; display:none;}
+.productYM .miaoshu .Ptable th{height:30px;}
+.productYM .miaoshu .Ptable td{border:#ddd 1px solid;padding:7px 5px;}
+/*tab切换*/
+.productYM .buydlList{ min-height:200px; height: auto !important; display:none;}
+.productYM .Ptable th{height:30px;}
+.productYM.Ptable td{border:#ddd 1px solid;padding:7px 5px;}
 /*details end*/
 
 /*foot-co start*/
@@ -1308,4 +1327,4 @@
     line-height: 12px;
     color: #fff;
 }
-/*foot-link end*/
+/*foot-link end

@@ -10,6 +10,9 @@ li{
 a{
     text-decoration: none;
 }
+table{
+	border-collapse: collapse;
+}
 /*去除点击input后的边框*/
 html{
     height: 100%;

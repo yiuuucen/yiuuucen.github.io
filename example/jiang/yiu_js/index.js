@@ -150,8 +150,6 @@ window.onscroll = function(){ //绑定scroll事件
 
 
 //商品详情页面中的tab切换功能
-console.log($('.productYM .details .tab div'))
-console.log($('.productYM .details .tab ul li'))
 var $tabLi=$('.productYM .details .tab ul li');
 var $tabDiv=$('.productYM .details .tab div');
 //初始化
