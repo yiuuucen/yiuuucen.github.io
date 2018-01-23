@@ -163,3 +163,36 @@ $tabLi.click(function(){
     $tabLi.eq(index).attr('class','hActive');
 })
 
+// list 列表分类页面下
+//点击多选时
+    $(".listYM .duoxuan").click(function(){
+        $(this).prev("ul").find("input").show();
+        $(this).addClass("danxuan");
+        $(this).next(".queen2").fadeIn();
+        })
+    //点击more
+    $(".listYM .more").click(function(){
+        $(this).hide();
+        $(this).next(".shou").show();
+        $(this).parents(".proPosition").find("ul").removeClass("moreHeight");
+        })      
+    $(".listYM .shou").click(function(){
+        $(this).hide();
+        $(this).prev(".more").show();
+        $(this).parents(".proPosition").find("ul").addClass("moreHeight");
+        })  
+    //.xuan2 li
+    $(".listYM .xuan2 li").hover(function(){
+        $(this).find(".chilXuan").show();
+        },function(){
+            $(this).find(".chilXuan").hide();
+            })
+    $(".listYM .duoxuan").click(function(){
+        $(this).parents(".chilXBox").find("input").show();
+        $(this).addClass("danxuan");
+        $(this).next(".queen2").fadeIn();
+        })
+    $(".listYM .proSelect li:first").addClass("selStyle");
+	$(".listYM .proSelect li").click(function(){
+		$(this).addClass("selStyle").siblings("li").removeClass("selStyle");
+		})
