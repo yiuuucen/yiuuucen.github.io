@@ -27,11 +27,11 @@ $(function(){
 	$("#down").click(function(){
 		if(flag){
 			$("#user").slideUp();
-			$("#down").attr("src","foot-up.png");
+			$("#down").attr("src","img/foot-up.png");
 			flag=false;
 		}else{
 			$("#user").slideDown();
-			$("#down").attr("src","foot-down.png");
+			$("#down").attr("src","img/foot-down.png");
 			flag=true;
 		}
 		
