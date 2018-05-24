@@ -62,7 +62,7 @@ BODY 标签选项：
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>猎犬</b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg" style="height: 100%"><img src="dist/img/logo.png" alt="" style="width: 55%"></span>
+      <span class="logo-lg" style="height: 100%;text-align: left;"><img src="dist/img/logo.png" alt="" style="height: 90%"></span>
     </a>
 
     <!-- Header Navbar -->
@@ -256,7 +256,7 @@ BODY 标签选项：
       <ul class="sidebar-menu">
         <li class="header">操作</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>目标人员管理</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -267,7 +267,7 @@ BODY 标签选项：
             <li><a href="#">批量提交查询号码</a></li>
           </ul>
         </li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>用户操作日志</span></a></li>
+        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>用户操作日志</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>系统权限管理</span>
             <span class="pull-right-container">
@@ -312,19 +312,131 @@ BODY 标签选项：
     <!-- Content Header (页眉) -->
     <section class="content-header">
       <h1>
-        页眉
-        <small>可选说明</small>
+        操作日志
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> 层级</a></li>
-        <li class="active">这里</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+        <li class="active">操作日志</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
 
-      <!-- 页面内容 -->
+      <!-- Default box -->
+      <div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">日志统计</h3>
+
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="折叠">
+              <i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="移除">
+              <i class="fa fa-times"></i></button>
+          </div>
+        </div>
+        <div class="box-body">
+          <div style="display: flex;justify-content: space-around;height: 300px">
+            <div id="barEchart01" style="width: 40%;height: 100%"></div>
+            <div id="barEchart02" style="width: 40%;height: 100%"></div>
+          </div>
+        </div>
+        <!-- /.box-body -->
+        
+      </div>
+      <!-- /.box -->
+
+      <!-- Default box -->
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">自响应表格</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="折叠">
+                  <i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="移除">
+                  <i class="fa fa-times"></i></button>
+              </div>
+
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive no-padding">
+              <table class="table table-hover">
+                <tbody>
+                  <tr>
+                    <th>日志ID</th>
+                    <th>用户ID</th>
+                    <th>用户姓名</th>
+                    <th>查询时间</th>
+                    <th>手机号码</th>
+                    <th>描述</th>
+                    <th>涉案类型</th>
+                  </tr>
+                  <tr>
+                    <td>SEL1000001</td>
+                    <td>10001</td>
+                    <td>张三</td>
+                    <td>2018.01.10   15:55:56</td>
+                    <td>177****8993</td>
+                    <td>一般人员</td>
+                    <td>XXX</td>
+                  </tr>
+                  <tr>
+                    <td>SEL1000001</td>
+                    <td>10001</td>
+                    <td>张三</td>
+                    <td>2018.01.10   15:55:56</td>
+                    <td>177****8993</td>
+                    <td>重点人员</td>
+                    <td><span class="label label-danger">涉毒</span></td>
+                  </tr>
+                  <tr>
+                    <td>SEL1000001</td>
+                    <td>10001</td>
+                    <td>张三</td>
+                    <td>2018.01.10   15:55:56</td>
+                    <td>177****8993</td>
+                    <td>一般人员</td>
+                    <td>XXX</td>
+                  </tr>
+                  <tr>
+                    <td>SEL1000001</td>
+                    <td>10001</td>
+                    <td>张三</td>
+                    <td>2018.01.10   15:55:56</td>
+                    <td>177****8993</td>
+                    <td>一般人员</td>
+                    <td><span class="label label-danger">涉毒</span></td>
+                  </tr>
+                  <tr>
+                    <td>SEL1000001</td>
+                    <td>10001</td>
+                    <td>张三</td>
+                    <td>2018.01.10   15:55:56</td>
+                    <td>177****8993</td>
+                    <td>一般人员</td>
+                    <td>XXX</td>
+                  </tr>
+                  <tr>
+                    <td>SEL1000001</td>
+                    <td>10001</td>
+                    <td>张三</td>
+                    <td>2018.01.10   15:55:56</td>
+                    <td>177****8993</td>
+                    <td>一般人员</td>
+                    <td><span class="label label-success">强奸</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+      </div>
+      <!-- /.box -->
 
     </section>
     <!-- /.content -->
@@ -428,7 +540,156 @@ BODY 标签选项：
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/app.min.js"></script>
+<script src="plugins/echartsjs/echarts.min.js"></script>
 
+
+<!-- 图中的2个echart图 -->
+<script>
+        //第一个echart图
+        var myChart1;
+        var myChart2;
+        sysEchart1_data();
+        function sysEchart1_data(time,value1,value2){
+
+            if (myChart1 != null && myChart1 != "" && myChart1 != undefined) {
+                myChart1.dispose();
+            }
+
+            myChart1 = echarts.init(document.getElementById('barEchart01'));
+            
+            // myChart1.showLoading({
+            //     text: 'loading...',
+            //     color: '#2196f3',
+            //     textColor: '#2196f3',
+            //     maskColor: 'transparent',
+            //     zlevel: 0,
+            // });
+            var arr=["2018/04/24", "2018/04/25", "2018/04/26", "2018/04/27", "2018/04/28", "2018/04/29", "2018/04/30", "2018/05/01", "2018/05/02", "2018/05/03", "2018/05/04", "2018/05/05", "2018/05/06", "2018/05/07", "2018/05/08", "2018/05/09", "2018/05/10", "2018/05/11", "2018/05/12", "2018/05/13", "2018/05/14", "2018/05/15", "2018/05/16", "2018/05/17", "2018/05/18", "2018/05/19", "2018/05/20", "2018/05/21", "2018/05/22", "2018/05/23", "2018/05/24"];
+            var data=[17, 51, 4, 8, 2, 0, 0, 0, 3, 1, 2, 0, 0, 2, 1, 0, 4, 0, 0, 0, 0, 5, 1, 0, 0, 0, 0, 0, 0, 3, 2];
+            option = {
+                  title: {
+                      text: '总查询量',
+                      bottom:'0',
+                      left:'40%',
+                  },
+                  tooltip: {
+                      formatter: '{b}<br/>{c} 次',
+                      trigger: 'axis',
+                      axisPointer: {
+                          animation: false,
+                          type: 'cross',
+                          label:{
+                              color:"rgba(0,0,0,0.6)",
+                              backgroundColor:"rgb(222,222,222)"
+                          },
+                          lineStyle: {
+                              color: '#4baa4f',
+                              width: 2,
+                              opacity: 0.6
+                          },
+                          crossStyle: {
+                              color: 'rgb(0,0,0)',
+                              width: 2,
+                              opacity: 0.6,
+                              type:"solid"
+                          }
+                      }
+                  },
+                  grid: {
+                      left: '3%',
+                      right: '3%',
+                      bottom: '10%',
+                      top:"3%",
+                      containLabel: true
+                  },
+                  xAxis: {
+                      type: 'category',
+                      axisLine: { lineStyle: { color: 'rgba(0,0,0,0.6)' } },
+                      data: arr,
+                  },
+                  yAxis: {
+                      type: 'value',
+                      splitLine: { show: false },
+                      axisLine: { lineStyle: { color: 'rgba(0,0,0,0.6)' } },
+                  },
+                  series: [{
+                      data: data,
+                      type: 'line',
+                      itemStyle: {
+                          normal:{
+                              color: '#2196f3'
+                          }
+                      },
+                      lineStyle: {
+                          normal:{
+                              color: '#2196f3'
+                          }
+                      },
+                  }]
+              };
+            // 为echarts对象加载数据
+            myChart1.setOption(option);
+        }
+        sysEchart2_data();
+        function sysEchart2_data(time){
+            if (myChart2 != null && myChart2 != "" && myChart2 != undefined) {
+                myChart2.dispose();
+            }
+            // 基于准备好的dom，初始化echarts图表
+            myChart2 = echarts.init(document.getElementById('barEchart02'));
+
+            option = {
+                title: {
+                      text: '分用户查询量',
+                      bottom:'0',
+                      left:'40%',
+                },
+                tooltip: {
+                    formatter: '{b}：{c} 次',
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'shadow'
+                    }
+                },
+                grid: {
+                    left: '3%',
+                    right: '3%',
+                    bottom: '10%',
+                    top:"3%",
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'value',
+                    boundaryGap: [0, 0.01],
+                    splitLine: { show: false },
+                    axisLine: { lineStyle: { color: 'rgba(0,0,0,0.6)' } },
+                },
+                yAxis: {
+                    type: 'category',
+                    data: ["", "", "", "", "", "", "", "张三", "Rodney Hood", "刘德华"],
+                    axisLine: { lineStyle: { color: 'rgba(0,0,0,0.6)' } },
+                },
+                series: [
+                    {
+                        type: 'bar',
+                        data: ["0", "0", "0", "0", "0", "0", "0", "5","1","100"],
+                        itemStyle: {
+                            normal:{
+                                color: '#2196f3'
+                            }
+                        },
+                        lineStyle: {
+                            normal:{
+                                color: '#2196f3'
+                            }
+                        },
+                    }
+                ]
+            };
+            // 为echarts对象加载数据
+            myChart2.setOption(option);
+        }
+</script>
 <!-- 或者，
      您可以添加Slimscroll和FastClick插件。
      建议使用这两个插件来增强用户体验。
