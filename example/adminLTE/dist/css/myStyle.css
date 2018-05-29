@@ -1,0 +1,291 @@
+.system{
+
+}
+.system .rili{
+	height: 50px;
+    line-height: 50px;
+}
+.system .content-header>.breadcrumb{
+	top: 0;
+}
+/*////////////////////////////////////////////////////////////////*/
+.personlist{
+
+}
+.personlist .up-some{
+	padding: 8px 10px;
+	margin: 0 0 0 10px;
+	float: right;
+	cursor: pointer;
+}
+.personlist .up-one{
+	padding: 8px;
+	float: right;
+	cursor: pointer;
+}
+/*personlist上的2个弹窗效果*/
+.personlist .submit_btn{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background: rgba(40,42,57,0.85);
+    display: none;
+}
+.personlist .submit_btn .submit_box{
+    width: 580px;
+    height: 260px;
+    background: #2f3242;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    -moz-box-shadow:-10px 0 10px #272938, /*左边阴影*/ 10px 0 10px #272938, /*右边阴影*/ 0 -10px 10px #272938, /*顶部阴影*/ 0 10px 10px #272938;
+    box-shadow:-10px 0 10px #272938, /*左边阴影*/ 10px 0 10px #272938, /*右边阴影*/ 0 -10px 10px #272938, /*顶部阴影*/ 0 10px 10px #272938;
+}
+.personlist .submit_btn .submit_box .box_top{
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    -moz-box-shadow: 0 10px 10px #272938;
+    box-shadow: 0 10px 10px #272938;
+}
+.personlist .submit_btn .submit_box .box_top span{
+    font-size: 23px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+.personlist .submit_btn .submit_box .box_top img{
+    width: 18px;
+    margin: 28px 30px 0 0;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+.personlist .submit_btn .submit_box .box_bottom{
+    color: #fff;
+    overflow: hidden;
+}
+.personlist .submit_btn .submit_box .box_bottom .choose{
+    margin: 30px 0 0 210px;
+}
+.personlist .submit_btn .submit_box .box_bottom .load{
+    width: 130px;
+    height: 30px;
+    line-height: 3;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    color:#2196f3;
+}
+.personlist .submit_btn .submit_box .box_bottom input:nth-child(3){
+    display: block;
+    width: 160px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    float: left;
+    background: #2196f3;
+    margin: 15px 65px 0 100px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+}
+.personlist .submit_btn .submit_box .box_bottom div:last-child{
+    display: block;
+    width: 160px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    float: left;
+    background: #2196f3;
+    margin: 15px 65px 0 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.personlist .submit_fail{
+       width: 100%;
+       height: 100%;
+       position: fixed;
+       left: 0;
+       top: 0;
+       z-index: 9999;
+       background: rgba(40,42,57,0.85);
+       display: none;
+}
+.personlist .submit_fail .submit_box{
+    width: 580px;
+    height: 350px;
+    background: #2f3242;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    -moz-box-shadow:-10px 0 10px #272938, /*左边阴影*/ 10px 0 10px #272938, /*右边阴影*/ 0 -10px 10px #272938, /*顶部阴影*/ 0 10px 10px #272938;
+    box-shadow:-10px 0 10px #272938, /*左边阴影*/ 10px 0 10px #272938, /*右边阴影*/ 0 -10px 10px #272938, /*顶部阴影*/ 0 10px 10px #272938;
+}
+.personlist .submit_fail .submit_box .box_top{
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    -moz-box-shadow: 0 5px 20px 0 #272938;
+    box-shadow: 0 5px 20px 0 #272938;
+}
+.personlist .submit_fail .submit_box .box_top span{
+    font-size: 23px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+.personlist .submit_fail .submit_box .box_top img{
+    width: 18px;
+    margin: 28px 30px 0 0;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+.personlist .submit_fail .submit_box .box_bottom{
+    color: #fff;
+    overflow: hidden;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg{
+    width: 580px;
+    height: 280px;
+    /*background: pink;*/
+    margin: 25px auto 0;
+    color: #fff;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg>div{
+    height: 55px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg>div>p{
+    width: 180px;
+    margin: 0 10px 0 40px;
+    height: 100%;
+    text-align: right;
+    font-size: 15px;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg>div>div{
+    width: 270px;
+    height: 100%;
+    margin: 0 0 0 5px;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg>div:nth-child(1)>div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg>div:nth-child(2)>div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg>div:nth-child(3)>div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg>div:nth-child(1)>div input{
+    width: 295px;
+    height: 35px;
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 5px;
+    padding: 0 0 0 14px;
+    color: #fff;
+    background: transparent;
+    font-weight: normal;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg>div:nth-child(1)>div span{
+    position: absolute;
+    color: red;
+    left: 120px;
+    bottom: 0;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg>div:nth-child(2)>div select{
+    width: 270px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #2f3242;
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 5px;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg>div:nth-child(3)>div select{
+    width: 270px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #2f3242;
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 5px;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg>div:nth-child(4)>div{
+    width: 165px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #2196f3;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px 0 0 3px;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg>div:last-child{
+    margin: 10px 95px 0;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg>div h3{
+    width: 160px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #2196f3;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+.personlist .submit_fail .submit_box .box_bottom .msg>div h3:first-child{
+    margin: 0 70px 0 0;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+.permission{
+
+}
+.permission .add{
+	padding: 8px 10px;
+	margin: 0 0 0 10px;
+	float: right;
+	cursor: pointer;
+}
+.permission .adduser{
+	display: none;
+}
+.permission .sysmg-adduser{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-flow: column nowrap;
+}
+.permission .sysmg-adduser label{
+	width: 100px;
+	padding: 20px;
+	text-align: right;
+}
+.permission .sysmg-subBtn{
+	margin: 0 0 0 100px;
+}
