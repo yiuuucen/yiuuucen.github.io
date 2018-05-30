@@ -1,3 +1,6 @@
+/*common*/
+
+/*//////////////////////////////////////////////////////*/
 .system{
 
 }
@@ -287,5 +290,61 @@
 	text-align: right;
 }
 .permission .sysmg-subBtn{
+	margin: 10px 0 20px 100px;
+}
+/*////////////////////////////////////////////////////////////////*/
+.account{
+
+}
+.account .sysmg-adduser{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-flow: column nowrap;
+}
+.account .sysmg-adduser label{
+	width: 200px;
+	padding: 20px;
+	text-align: right;
+}
+.account .sysmg-subBtn{
 	margin: 0 0 0 100px;
+}
+.account>#f1,.account>#f2,.account>#f3{
+	padding: 10px;
+    font-size: 18px;
+}
+.account .change_pwd{
+	margin: 10px 0 20px 200px;
+}
+
+.account .doChange{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-flow: column nowrap;
+
+}
+.account .doChange label{
+	width: 200px;
+	padding: 20px;
+	text-align: right;
+}
+
+.account>#f1,.account>#f2,.account>#f3,.account>#f4,.account>#f5,.account>#f6{
+	padding: 10px;
+    font-size: 18px;
+}
+.account .change_ok{
+	margin: 10px 0 20px 200px;
+}
+.chang2{
+	display: none;
+}
+/*////////////////////////////////////////////////////////////////////////////*/
+.overview{
+
+}
+.overview .content-header>.breadcrumb{
+	top: 0;
 }
