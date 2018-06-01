@@ -1,5 +1,22 @@
 /*common*/
-
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body{ background:#fff; color:#333; font-size:14px; font-family: "Microsoft YaHei"; cursor: default;min-width: 1024px;}
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a {text-decoration:none; outline: none; }
+a:hover { text-decoration:none; }
+img { border:none; }
+b,strong{font-weight: normal;}
+ol,ul,li { list-style:none; }
+i{font-style: normal;}
+input, textarea, select, button { outline: none; font-size:14px; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{font-weight: normal;color: #999;}
+table { border-collapse:collapse; }
+th,td{text-align: center;}
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td{
+    border-bottom-width: 1px ;
+}
 /*//////////////////////////////////////////////////////*/
 .system{
 
@@ -347,4 +364,339 @@
 }
 .overview .content-header>.breadcrumb{
 	top: 0;
+}
+/*/////////////////////////////////////////////////////////////////////////*/
+.contact{
+
+}
+.contact .content-header>.breadcrumb{
+    top: 0;
+}
+.contact .personMsg{
+    position: absolute;
+    right: 100px;
+}
+/*联系人列表*/
+.contact .listl .l-contacts{
+  position: relative;
+}
+.contact .listl .l-contacts .c-top {
+  overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+  /*width: 100%;*/
+}
+.contact .listl .l-contacts .c-top span {
+  text-align: center;
+  color:#999;
+  /*width: 80px;*/
+  margin-right:5px;
+}
+.contact .listl .l-contacts .c-top .pull-right{
+    font-size:12px;
+}
+.contact .listl .l-contacts .c-top span:nth-child(1){
+  width: 80px;
+  padding: 0 0 0 13px;
+  height: 30px;
+  /*color:#237eca;*/
+  text-align:left;
+  line-height: 30px;
+  margin: 5px 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid #237eca;
+  /*background: url(../img/contact_bottom.png) 90% no-repeat;*/
+  background-size: 15px;
+  cursor: pointer;
+}
+
+.contact .listl .l-contacts .c-top .shaixuan-noselect{
+    color:#237eca;
+    background: url(../img/old/contact_bottom.png) 90% no-repeat;
+}
+
+.contact .listl .l-contacts .c-top .shaixuan-selected{
+    color:#fff;
+    background: url(../img/old/contact_top.png) 90% no-repeat;
+    background-color:#237eca;
+}
+.contact .listl .l-contacts .c-head {
+  overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  background-color: #3a3e52;
+}
+.contact .listl .l-contacts .c-head span {
+  text-align: center;
+  color:#fff;
+}
+.contact .listl .l-contacts .c-head span:nth-child(1){
+  width: 40%;
+  min-width: 140px;
+}
+.contact .listl .l-contacts .c-head span:nth-child(2){
+  width: 20%;
+  min-width: 60px;
+}
+.contact .listl .l-contacts .c-head span:nth-child(3){
+  width: 20%;
+  min-width: 52px;
+}
+.contact .listl .l-contacts .c-head span:nth-child(4){
+  width: 20%;
+  min-width: 57px;
+}
+.contact .listl .l-contacts .list {
+  overflow-y: auto;
+  font-size: 12px;
+}
+.contact .listl .l-contacts .list .list-person{
+  height: 40px;
+  line-height: 40px;
+  
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.contact .listl .l-contacts .list .li-selected{
+    background-color:rgba(22,112,213,0.3);
+}
+
+.contact .listl .l-contacts .list li:hover{
+    
+    border: 2px solid rgba(22,112,213,0.6);
+    cursor: pointer;
+}
+
+.contact .listl .l-contacts .list .list-person span{
+  display: block;
+  float: left;
+  text-align: center;
+}
+.contact .listl .l-contacts .list .list-person span:nth-child(1){
+  min-width: 140px;
+  width: 40%;
+  padding-left: 15px;
+  text-align: left;
+}
+.contact .listl .l-contacts .list .list-person span:nth-child(2){
+    width: 20%;
+  min-width: 60px;
+  color:#9a9a9a;
+}
+.contact .listl .l-contacts .list .list-person span:nth-child(3){
+    width: 20%;
+  min-width: 52px;
+  color:#9a9a9a;
+}
+.contact .listl .l-contacts .list .list-person span:nth-child(4){
+    width: 20%;
+  min-width: 52px;
+  color:#9a9a9a;
+}
+.contact .listl .l-contacts .list .zhongdian-person span:nth-child(2),
+.contact .listl .l-contacts .list .zhongdian-person span:nth-child(3),
+.contact .listl .l-contacts .list .zhongdian-person span:nth-child(4){
+ color:rgba(85, 182, 60, 1);
+ font-weight: bold;
+}
+.contact .listl .l-contacts  .daochu{
+  width: 80%;
+  height: 40px;
+  background: rgb(33,150,243);;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.8);
+  cursor: pointer;
+  border-radius:6px;
+}
+.contact .listl .l-contacts .l-con-tanC{
+  position: absolute;
+  width: 100%;
+  /*高度为100%-筛选键高度40px+导出信息按钮margin-bottom17px*/
+  height: calc( 100% - 40px + 17px);
+  left: 0;
+  top: 40px;
+  z-index: 9999;
+  background: rgba(40,42,57,0.85);
+  display: none;
+}
+.contact .listl .l-contacts .l-con-tanC .tanCont{
+  width: 246px;
+  background: #2f3242;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  text-align: center;
+}
+.contact .l-con-tanC .tanCont .tan-choose{
+  height: 90px;
+  /*color: #fff;*/
+  color:#9d9fa6;
+  border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.contact .l-con-tanC .tanCont>div:nth-child(2){
+  border-bottom:none;
+}
+.contact .l-con-tanC .tanCont .tan-choose h3{
+  text-align: left;
+  margin: 15px 20px;
+}
+.contact .l-con-tanC .tanCont .tan-choose span{
+  display: block;
+  width: 90px;
+  height: 30px;
+  line-height: 28px;
+  border: 1px solid #9d9fa6;
+  border-radius: 3px;
+  float: left;
+  margin: 0 15px;
+  cursor: pointer;
+  font-size:12px;
+}
+.contact .l-con-tanC .tanCont .tan-choose span.tan-select{
+  border:1px solid #4a4f67 ;
+  background:#4a4f67;
+  color: #fff;
+}
+
+.contact .l-con-tanC .tanCont .tan-choose2{
+  height: 90px;
+  /*color: #fff;*/
+  color:#9d9fa6;
+  border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.contact .l-con-tanC .tanCont .tan-choose2 h3{
+  text-align: left;
+  margin: 15px 20px;
+}
+.contact .l-con-tanC .tanCont .tan-choose2 span{
+  display: block;
+  width: 90px;
+  height: 30px;
+  line-height: 28px;
+  border: 1px solid #9d9fa6;
+  border-radius: 3px;
+  float: left;
+  margin: 0 15px;
+  cursor: pointer;
+  font-size:12px;
+}
+.contact .l-con-tanC .tanCont .tan-choose2 span.tan-select{
+  border:1px solid #4a4f67 ;
+  background:#4a4f67;
+  color: #fff;
+}
+
+.contact .l-con-tanC .tanCont .tan-reset{
+  color: #fff;
+  height: 35px;
+  line-height: 35px;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  background: rgb(58,62,82);
+  float: left;
+}
+.contact .l-con-tanC .tanCont .tan-qued{
+  color: #fff;
+  height: 35px;
+  line-height: 35px;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  background: #2091ec;
+  float: left;
+}
+.contact  .echart-right .csbox .cent {
+  background: none;
+  background-color: #2f3242;
+}
+.contact  .echart-right .head {
+  background-color: #3a3e52;
+}
+.contact  .echart-right .e-right .e-r-l h1 {
+  padding: 0 10px;
+  color: #2899fc;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+}
+.contact  .echart-right .e-right .ectitle span.active {
+  color: #2899fc;
+}
+.contact  .mylist-group-item {
+  background-color: #2b2d3c;
+  border: none;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #4d5060;
+}
+.contact .echart-right {
+  position: absolute;
+  width: 276px;
+  height: 600px;
+  overflow-y: auto;
+  overflow-x:hidden;
+  background-color: #2f3242;
+}
+.contact .echart-right .head {
+  height: 35px;
+  padding: 0 10px;
+  padding-top: 10px;
+  background-color: #656c70;
+}
+.contact .echart-right .head h3 {
+  color: #fff;
+}
+.contact .echart-right .head .btn {
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  color: #FFFFFF;
+  position: relative;
+  top: -5px;
+}
+.contact .echart-right .csbox .cent {
+  height: 90px;
+  width: 100%;
+  padding: 15px 10px;
+}
+.contact .echart-right .csbox .cent .texTtitle {
+  width: 175px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+  padding-left: 10px;
+  color: #2899fc;
+  font-size: 12px;
+}
+.contact .echart-right .e-right .e-r-l h1 i {
+  margin-left: 4px;
+  vertical-align: middle;
+}
+.contact .echart-right .e-right .ectitle {S
+  height: 22px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-left: 0px;
+  padding-left: 10px;
+}
+.contact .echart-right .e-right .ectitle span {
+  font-size: 12px;
+  color: #5b6770;
+  cursor: pointer;
+}
+.contact .echart-right .e-right .ectitle span.active {
+  color: #4aa1f7;
+}
+.contact .echart-right .e-right .ectitle i {
+  color: #5b6770;
+  font-size: 14px;
 }
