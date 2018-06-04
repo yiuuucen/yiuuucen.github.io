@@ -379,6 +379,7 @@ th,td{text-align: center;}
 /*联系人列表*/
 .contact .listl .l-contacts{
   position: relative;
+  font-size: 12px;
 }
 .contact .listl .l-contacts .c-top {
   overflow: hidden;
@@ -434,19 +435,19 @@ th,td{text-align: center;}
 }
 .contact .listl .l-contacts .c-head span:nth-child(1){
   width: 40%;
-  min-width: 140px;
+  
 }
 .contact .listl .l-contacts .c-head span:nth-child(2){
   width: 20%;
-  min-width: 60px;
+  
 }
 .contact .listl .l-contacts .c-head span:nth-child(3){
   width: 20%;
-  min-width: 52px;
+  
 }
 .contact .listl .l-contacts .c-head span:nth-child(4){
   width: 20%;
-  min-width: 57px;
+  
 }
 .contact .listl .l-contacts .list {
   overflow-y: auto;
@@ -474,24 +475,27 @@ th,td{text-align: center;}
   text-align: center;
 }
 .contact .listl .l-contacts .list .list-person span:nth-child(1){
-  min-width: 140px;
+  
   width: 40%;
   padding-left: 15px;
   text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .contact .listl .l-contacts .list .list-person span:nth-child(2){
-    width: 20%;
-  min-width: 60px;
+  width: 20%;
+
   color:#9a9a9a;
 }
 .contact .listl .l-contacts .list .list-person span:nth-child(3){
-    width: 20%;
-  min-width: 52px;
+  width: 20%;
+  
   color:#9a9a9a;
 }
 .contact .listl .l-contacts .list .list-person span:nth-child(4){
-    width: 20%;
-  min-width: 52px;
+  width: 20%;
+  
   color:#9a9a9a;
 }
 .contact .listl .l-contacts .list .zhongdian-person span:nth-child(2),
