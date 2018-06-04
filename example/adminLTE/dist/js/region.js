@@ -1,4 +1,28 @@
-
+    
+    var str=window.location.search;
+    if(str.match('mydata=1')){
+        $("#bar01").addClass('mActive');
+        reliMap();
+        setTimeout(function(){
+            $("#bar01").click()
+            console.log(1)
+        },1)  
+    }else if(str.match('mydata=2')){
+        $("#bar02").addClass('mActive');
+        areaMap();
+        setTimeout(function(){
+            $("#bar02").click()
+            console.log(2)
+        },1) 
+    }else if(str.match('mydata=3')){
+        $("#bar03").addClass('mActive');
+        trailMap();
+        setTimeout(function(){
+            $("#bar03").click()
+            console.log(3)
+        },1) 
+    }
+    
     //vue的ele日历
     new Vue({
         el:'#app',
@@ -99,7 +123,7 @@
     var myChart1;
     var myChart2;
     var myChart3;
-    reliMap();
+    
     function reliMap(){
         if (myChart1 != null && myChart1 != "" && myChart1 != undefined) {
             myChart1.dispose();
